@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- * A gradient is a smooth transition from one color to anther. In addition, several color transitions can be applied to the same element.
+     There are two main types of gradients in SVG:
+     - Linear
+     - Radial -->
+
+    <!-- ** Linear Gradient ** -->
+    <!-- * The <linearGradient> element is used to define a linear gradient.
+        * The <linerGradient> element must be nested within a <defs> tag. The <defs> tag is short for definitions and contains definition of special elements (such as gradients).
+        * Linear gradients can be defines as horizontal, vertical or angular gradients:
+            Horizontal gradients are created when y1 and y2 are equal and x1 and x2 differ
+            Vertical gradients are created when x1 and x2 are equal and y1 and y2 differ
+            Angular gradients are created when x1 and x2 differ and y1 and y2 differ -->
+    <svg height="100%" width="100vh">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="50%" x2="50%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,0,0)"></stop>
+                <stop offset="100%" style="stop-color:rgb(0,0,0)"></stop>
+            </linearGradient>
+        </defs>
+        <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)"></ellipse>
+        <!-- <rect x="0" y="0" width="100%" height="100vh" fill="url(#grad1)"></rect> -->
+        <text fill="#fff" font-size="40" x="150" y="85">hiii</text>
+    </svg>
+    <hr>
+
+    <!-- ** radialGradient ** -->
+    <svg height="100%" width="100vh">
+        <defs>
+            <radialGradient id="grad3" cx1="50%" cy1="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity: 1"></stop>
+                <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity: 1"></stop>
+            </radialGradient>
+        </defs>
+        <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad3)"></ellipse>
+        <!-- <rect x="0" y="0" width="100%" height="100vh" fill="url(#grad1)"></rect> -->
+        <text fill="#fff" font-size="40" x="150" y="85"></text>
+    </svg>
+
+
+</body>
+
+</html>

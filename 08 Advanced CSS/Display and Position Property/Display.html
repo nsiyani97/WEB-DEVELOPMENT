@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1 {
+            background-color: red;
+        }
+        span{
+            background-color: lightblue;
+        }
+        a{
+            background-color: lightgreen;
+        } */
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        #inline li {
+            display: inline;
+        }
+
+        #inline-block li {
+            display: inline-block;
+        }
+
+        #block li {
+            display: block;
+        }
+
+        .flex{
+            display: flex;
+        }
+        .flex{
+            padding: 10px;
+            background-color: white;
+            border: 10px solid red;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- * CSS display is the most important property of CSS which is used to control the layout of the element. It specifies how the element is displayed. -->
+    <!-- * CSS Display Value:
+            - display: inline;
+            - display: inline-block;
+            - display: block;
+            - display: none;
+            - flex -->
+
+    <!-- ** Inline ** -->
+    <!-- * The inline element takes the required width only. It doesn't force the line break so the flow of text doesn't break in inline example.
+     * The inline elements are : <span> <a> <em> <b> etc. -->
+
+    <!-- <h1>This is a Heading Tag</h1>
+    <br>
+    <span>This is a Span</span>
+    <a href="">This is a Link</a> -->
+
+    <h1>inline</h1>
+    <ul id="inline">
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+    </ul>
+
+    <!-- ** Inline-block ** -->
+    <!-- * The CSS display inline-block element is very similar to inline element but the difference is that you are able to set the width and height. -->
+
+    <h1>inline-block</h1>
+    <ul id="inline-block">
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+    </ul>
+
+    <!-- ** Block ** -->
+    <!-- * The CSS display block element takes as horizontal space as they can. Means the block element takes the full available width. They make a line break before and after them. -->
+
+    <h1>block</h1>
+    <ul id="block">
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+    </ul>
+
+    <!-- ** None ** -->
+    <!-- * The "none" value totally removes the element from the page. It will not take any space. -->
+    <div>This Div is visible</div>
+    <div style="display: none;">This Div is hidden</div>
+    <br><br>
+
+    <!-- ** flex ** -->
+    <!-- * It is used to display an element as an block-level flex container. It is new in css3. -->
+
+    <h1>flex</h1>
+    <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+
+</body>
+
+</html>

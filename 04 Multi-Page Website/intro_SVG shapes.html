@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalable Vector Graphic</title>
+</head>
+
+<body>
+    <!-- * The HTML is an acronym which stands for Scalable Vector Graphic
+        * HTML SVG is a modularized language which is used to describe graphics in XML. it describe two-dimensional vector and mixed vector/raster graphics in XML.
+        * SVG is mostly used for vector type diagrams like pie charts, 2-Dimensional graphs in an X,Y coordinate system etc. -->
+
+    <!-- ** SVG Circle ** -->
+    <!-- cx, cy and r are attribute of circle tag. These attributes can't be used with svg other tag. -->
+    <svg width="400" height="400">
+        <circle cx="200" cy="200" r="100" stroke="red" stroke-width="8px" fill="yellow"></circle>
+    </svg>
+
+    <!-- ** Ellipse ** -->
+    <!-- The cx attribute defines the x coordinate of the center of the ellipse
+      The cy attribute defines the y coordinate of the center of the ellipse
+      The rx attribute defines the horizontal radius
+      The ry attribute defines the vertical radius -->
+    <svg width="500" height="300">
+        <ellipse cx="200" cy="200" rx="100" ry="50" stroke="red" stroke-width="8px" fill="yellow"></ellipse>
+    </svg>
+
+    <!-- ** Rectangle ** -->
+    <svg width="500" height="300">
+        <rect x="0" y="0" width="300" height="100" stroke="red" stroke-width="8px" fill="yellow"></rect>
+    </svg>
+
+    <!-- ** SVG Line ** -->
+    <svg width="500" height="300">
+        <line x1="50" y1="50" x2="300" y2="50" style="stroke:red; stroke-width:8px"></line>
+    </svg>
+
+    <!-- ** SVG Polygon -->
+    <!-- The <polygon> element is used to create a graphic that contains at least three sides.
+        Polygons are made of straight lines, and the shapes is "closed" (all the lines connect up). -->
+
+    <svg width="500" height="300">
+        <polygon points="100,10 400,10 400,200 100,200"></polygon>
+    </svg>
+
+    <!-- * SVG Polyline -->
+    <!-- The <polyline> element is used to create any shape that consists of only straight lines (that is connected at several points) -->
+
+    <svg width="500" height="300">
+        <polyline points="100,10 400,10 400,200 100,"></polyline>
+    </svg>
+
+</body>
+
+</html>

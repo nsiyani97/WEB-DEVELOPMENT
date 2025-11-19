@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+        }
+
+        .main {
+            background-image: url(5.jpg);
+            background-size: cover;
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+        }
+
+        .header {
+            display: flex;
+            width: 60%;
+            margin-left: 20%;
+            padding: 1%;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+        }
+
+        .head {
+            display: flex;
+            width: 60%;
+            height: 100%;
+            margin: 10% 20%;
+            padding-bottom: 15%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        h5 {
+            font-size: 12px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        .button {
+            width: 100%;
+        }
+
+        .buttonone {
+            width: 15%;
+            background-color: rgba(255, 99, 71, 0.718);
+            padding: 6px;
+            font-size: 8px;
+            color: white;
+        }
+
+        .buttontwo {
+            width: 15%;
+            background-color: rgba(255, 255, 255, 0.454);
+            padding: 6px;
+            font-size: 8px;
+            color: white;
+        }
+
+        .logo{
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            margin: 8px;
+            border: 1.2px solid rgba(255, 0, 0, 0.617);
+            border-radius: 50px;
+        }
+
+        .footer {
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 0%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+                <path
+                    d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+            </svg>
+            <span>
+                <a href="">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="">Pricing</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="">Team</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+        </div>
+        <div class="head">
+            <h5>Our client are our first priority</h5>
+            <h3><b>WELCOME TO SKY</b></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, harum enim iure quasi reiciendis
+                velit
+                dolorem, esse veritatis eligendi vero officia impedit distinctio molestias quod alias eaque.
+                Praesentium,
+                quod qui?</p>
+            <div class="button">
+                <button class="buttonone"><b>GET STARTED NOW</b></button>
+                <button class="buttontwo"><b>LEARN MORE</b></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="box">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses"
+                viewBox="0 0 16 16">
+                <path
+                    d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0" />
+            </svg>
+            <h5>SLEEK DESIGN</h5>
+            <p>adipisicing elit. Sint fugiat voluptatibus voluptate distinctio
+                molestiae?</p>
+        </div>
+        <div class="box">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-braces"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6" />
+            </svg>
+            <h5>CLEAN CODE</h5>
+            <p>adipisicing elit. Sint fugiat voluptatibus voluptate distinctio
+                molestiae?</p>
+        </div>
+        <div class="box">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                <path
+                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
+            </svg>
+            <h5>CREATIVE IDEAS</h5>
+            <p>adipisicing elit. Sint fugiat voluptatibus voluptate distinctio
+                molestiae?</p>
+        </div>
+        <div class="box">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1" />
+            </svg>
+            <h5>FREE SUPPORT</h5>
+            <p>adipisicing elit. Sint fugiat voluptatibus voluptate distinctio
+                molestiae?</p>
+        </div>
+    </div>
+</body>
+
+</html>

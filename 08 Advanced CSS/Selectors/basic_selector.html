@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* by tag anme */
+        h1{
+            color: red;
+        }
+        /* by class name: we can apply class at multiple elemenets */
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+        /* by id: wecan apply id on single element..because we have to create unnique element for JS */
+        #item{
+            font-size: 100px;
+        }
+
+        /* attribute selector */
+        a[target]
+        {
+            color: red;
+        }
+        
+        /* a[target="_blank"]
+        {
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <h1 class="box" >Lorem ipsum dolor sit amet.</h1>
+    <div class="box">div element</div>
+    <p id="item">paragraph tag</p>
+    <a href="#">HOME</a>
+    <a href="#" target="_blank">HOME</a>
+    <a href="#" target="_parent">HOME</a>
+</body>
+</html>

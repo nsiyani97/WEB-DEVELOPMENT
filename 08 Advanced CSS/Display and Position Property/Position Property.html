@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static {
+            position: static;
+            top: 10px;
+            right: 100px;
+        }
+
+        .fixed {
+            position: fixed;
+            right: 10px;
+            top: 30px;
+        }
+
+        .relative {
+            position: relative;
+            top: 10px;
+            right: 100px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 10px;
+            right: 100px;
+        }
+
+        .img-relative {
+            position: relative;
+            width: 300px;
+            background-color: aquamarine;
+        }
+
+        .sticky {
+            position: sticky;
+            bottom: 50px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: lightblue;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ** Position ** 
+     * The CSS position property is used to set position for an element. It is also used to place an element behind another and also useful for script animation effect.
+     * You can position an element using the top, bottom, left and right properties. These properties can be used only after position property, is set first. A position element's computed position property is relative, absolute, fixed or sticky.
+     1. CSS Static Positioning
+     2. CSS Fixed Positioning
+     3. CSS Relative Positioning 
+     4. CSS Absolute Positioning -->
+
+    <h2>Static Positioning</h2>
+    <!-- * Static Positioning : This is a by default position fo HTML elements. It always positions an element according to the normal flow of the page. It is not affected by the top, bottom, left and right properties. -->
+    <img src="/image/elon musk.jpg" alt="" width="300">
+    <img class="static" src="/image/s.png" alt="" width="100">
+    <hr>
+
+    <h2>Fixed Positioning</h2>
+    <!-- * Fixed Positioning : The fixed positioning property helps to put the text fixed on the browser. This fixed test is positioned relative to the browser window, and doesn't move even you scroll the window. -->
+    <img src="/image/elon musk.jpg" alt="" width="300">
+    <img class="fixed" src="/image/f.png" alt="" width="100">
+    <hr>
+
+    <h2>Relative Positioning</h2>
+    <!-- * Relative Positioning : The relative positioning property is used to set the element relative to its normal position. -->
+    <img src="/image/elon musk.jpg" alt="" width="300">
+    <img class="relative" src="/image/r.png" alt="" width="100">
+    <hr>
+
+    <h2>Absolute Positioning</h2>
+    <!-- * Absolute Positioning : The absolute positioning is used to position an element relative to the first parent element that has a position other than static. If no such element is found, the containing block is HTML. It works with div or else body -->
+    <div class="img-relative">
+        <img src="/image/elon musk.jpg" alt="" width="300">
+        <img class="absolute" src="/image/a.png" alt="" width="100">
+    </div>
+    <hr>
+
+    <h2>Sticky Property</h2>
+    <!-- * Sticky Property : The CSS property is used to set the position for an element. It is also used to place an item behind another element and also useful for the scripted animation effect. The "position: sticky;" is used position the element based on he scroll position of the user.
+     * This CSS property allows the elements to stick when the scroll reaches to a certain point. Depends upon the scroll position, a sticky element toggles in between fixed and relative. The element will be positioned relative until the specified position of offset is met in viewport. Then, similar to position: fixed, the element sticks in one place. -->
+    <img src="/image/elon musk.jpg" alt="" width="300">
+    <img class="sticky" src="/image/s.png" alt="" width="100">
+    <hr>
+
+
+</body>
+
+</html>

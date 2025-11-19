@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent1{
+            height: 300px;
+            width: 300px;
+            display: grid;
+            background-color: burlywood;
+            padding: 5px;
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template-rows: repeat(1,1fr);
+
+            /* grid-template-columns: 0.5fr 1fr 0.5fr; */
+
+            grid-template-columns:1fr 2fr 1fr;
+            column-gap: 10px;
+            /* row-gap: ; */
+            /* gap: ; */
+        }
+        .parent1 .box{
+            border: 2px solid black;
+        }
+        .parent2{
+            height: 300px;
+            width: 300px;
+            background-color: burlywood;
+            padding: 5px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 10px;
+        }
+        .parent2 .box{
+            border: 2px solid black;
+        }
+        .parent2 .box1{
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+            grid-row: 1/3;
+        }
+        .parent3{
+            height: 300px;
+            width: 300px;
+            background-color: burlywood;
+            padding: 5px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr 0.8fr 0.8fr;
+            /* gap: 10px; */
+        }
+        .parent3 .box{
+            border: 2px solid black;
+        }
+        .parent3 .box2{
+            grid-row: 1/3;
+            grid-column: 2/3;
+        }
+        .parent3 .box4{
+            grid-row: 2/4;
+            grid-column: 1/2;
+        }
+        .parent3 .box6{
+            grid-row: 2/4;
+            grid-column: 3/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent1">
+        <div class="box "></div>
+        <div class="box"></div>
+        <div class="box "></div>
+    </div>
+    <hr>
+    <div class="parent2">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+    <hr>
+    <div class="parent3">
+       <div class="box box1">1</div>
+       <div class="box box2">2</div>
+       <div class="box box3">3</div>
+       <div class="box box4">4</div>
+       <div class="box box5">5</div>
+       <div class="box box6">6</div>
+    </div>
+</body>
+</html>

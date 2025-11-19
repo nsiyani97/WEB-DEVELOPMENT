@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megazzine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MEGA<span class="logo-blue">ZZINE</span></h1>
+      <span>ONLINE</span>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#" data-page="home">Home</a></li>
+        <li><a href="#" data-page="articles">Articles</a></li>
+        <li><a href="#" data-page="photos">Photos</a></li>
+        <li><a href="#" data-page="community">Community</a></li>
+        <li><a href="#" data-page="about">About</a></li>
+        <li><a href="#" data-page="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="content" id="content">
+        <h2>Welcome to Megazzine</h2>
+        <p>This is the home page. Select a menu option to load content here.</p>
+      </div>
+
+      <aside class="sidebar">
+        <div class="dropdown">
+          <button class="drop-btn">Categories ▾</button>
+          <ul class="drop-content">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Health</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button class="drop-btn">Archives ▾</button>
+          <ul class="drop-content">
+            <li><a href="#">January 2025</a></li>
+            <li><a href="#">December 2024</a></li>
+            <li><a href="#">November 2024</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <button class="drop-btn">Tags ▾</button>
+          <ul class="drop-content">
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Coding</a></li>
+            <li><a href="#">Trends</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <aside class="ads-sidebar">
+        <div class="ad-small">Small Ad Box</div>
+        <div class="ad-large">Large Ad Box</div>
+      </aside>
+    </div>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Megazzine. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

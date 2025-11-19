@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: blueviolet;
+            font-size: 30px;
+            color: red;
+        }
+        #abc{
+            background-color: yellow;
+        }
+        div[id=abc]{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- !for interview -->
+    <!-- ** Specificity is the way which helps the browsers to decide which property value is most relevant for the element. It determines which style declaration is applied to an element. **
+     * The CSS specificity is important only when various selectors are affecting the same element. In this case, the browser needs a way to identify the style to be applied to the matching element, and CSS specificity is the way of doing it.
+     * When two or more selectors have equal specificity value, then the latest one considers.
+     * Universal selectors (*) and the inherited values have lower specificity, i.e., 0 specificity.
+     * The style property has a greater specificity value compare to the selectors (except the !important in the stylesheet selector).
+     * The !important alter the selector specificity. When two selectors have equal specificity. then the selector having !important -->
+
+    <!-- ** hierarchy ** -->
+    <!-- *1. inline styles : It is attached to the element which is to be styled. For example: <p style="color:red;">. It has the highest priority.
+        *2. IDs : It is unique identifier for the elements of a page that has the second-highest priority. For example: #para.
+        *3. Classes, attributes, and pseudo-classes : It includes classes, attributes, and pseudo-classes(like :focus, :hover, etc.).
+        *4. Elements and pseudo-elements : It includes the name of elements (div,h1) and pseudo-elements (like :after and :before). They have the lowest priority. -->
+
+    <!-- ** Rules ** -->
+    <!-- * The specificity of ID selectors is higher than attribute selectors
+      * In equal specificity, the latest rule will count
+      * The specificity of class selector is greater than the element selectors -->
+
+    <div id="abc">This is LearnVern</div>
+</body>
+
+</html>

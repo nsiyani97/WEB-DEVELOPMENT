@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>colspan</h1>
+    <ul>
+        <li>To make a cell span over multiple columns, use the colspan attribute</li>
+        <li>The value of the colspan attribute represents the number of columns to span.</li>
+    </ul>
+    <table border="2" width="50%" cellpadding="5" cellspacing="5">
+        <tr>
+            <th>S.N</th>
+            <th>Item</th>
+            <th>QTY</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <th>earphone</th>
+            <th>5</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <th>headphone</th>
+            <th>15</th>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">total:20</td>
+        </tr>
+    </table>
+
+
+    <hr>
+    <h1>rowsapn</h1>
+    <ul>
+        <li>To make a cell span over multiple rows, use the rowspan attribute</li>
+        <li>The value of the rowspan attribute represents the number of rows to span</li>
+    </ul>
+    <table border="2" width="50%" cellpadding="5" cellspacing="5">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td rowspan="3">1</td>
+            <td rowspan="3">david</td>
+            <td>Maths</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>physiics</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>Computer</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td rowspan="3">2</td>
+            <td rowspan="3">Alex</td>
+            <td>Maths</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>physics</td>
+            <td>65</td>
+
+        </tr>
+        <tr>
+            <td>Computer</td>
+            <td>56</td>
+        </tr>
+    </table>
+</body>
+
+</html>

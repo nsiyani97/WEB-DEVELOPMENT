@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class-important h1{
+            color: red !important;
+        }
+
+        .class-important h1{
+            color: green;
+        }
+
+        .class-important h3 {
+            color: purple !important;
+        }
+
+        .class-important h3 {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ** CSS Important ** -->
+    <!-- * This property in CSS is used to give more importance compare to normal property. The !important means 'this is important.' This rule provides a way of making the Cascade in CSS.
+      * If a rule is defined with this attribute, it will reject the normal concern in which the later used rule overrides ones. If we use more than one declaration marked !important, then the normal cascade takes it over again. That means the new marked !important will replace the previous one. -->
+
+    <div class="class-important">
+        <h1>This is a heading</h1>
+
+        <h3 style="color: aqua !important;">This is a heading 3</h3>
+    </div>
+
+</body>
+
+</html>

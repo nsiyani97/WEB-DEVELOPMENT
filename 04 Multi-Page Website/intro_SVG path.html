@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ** SVG Path ** -->
+    <!-- * The <path> element is used to define a path.
+    * The following commands are available for path data:
+     M = moveto
+     L = lineto
+     H = horizontal lineto
+     V = vertical lineto
+     Z = closepath 
+     C = curveto
+     S = smooth curveto -->
+    <svg width="500" height="300">
+        <!-- <path d="M150 0 L75 200 L225 200 Z"></path> -->
+        <path d="M100 0 S150 200 300 0" stroke="blue" fill="none" stroke-width="5"></path>
+    </svg>
+
+    <!-- ** SVG Text ** -->
+    <svg width="500" height="300">
+        <text x="50" y="50" font-size="40" font-family="sans" fill="red" transform="rotate(30 20,50)">hiii</text>
+    </svg>
+
+    <!-- ** SVG Stroke ** -->
+    <!-- * SVG offers a wide range of stroke properties. In this chapter we will look at the following:
+     - stroke
+     - stroke-width
+     - stroke-linecap
+     - stroke-dasharray -->
+     <!-- <g> tag is use to gather multiple path tag -->
+    <svg width="500" height="300">
+        <g fill="none" stroke="black" stroke-width="5">
+            <!-- <path stroke="red" d="M5 20 L215 0"></path>
+            <path stroke="black" d="M5 40 L215 0"></path>
+            <path stroke="purple" d="M5 60 L215 0"></path> -->
+
+            <!-- <path stroke-width="1" d="M5 20 L215 20"></path>
+            <path stroke-width="3" d="M5 40 L215 40"></path>
+            <path stroke-width="5" d="M5 60 L215 60"></path> -->
+
+            <!-- <path stroke-linecap="butt" d="M5 20 L215 20"></path>
+            <path stroke-linecap="round" d="M5 40 L215 40"></path>
+            <path stroke-linecap="square" d="M5 60 L215 60"></path> -->
+
+            <path stroke-dasharray="5,5" d="M5 20 L215 20"></path>
+            <path stroke-dasharray="10,10" d="M5 40 L215 40"></path>
+            <path stroke-dasharray="20,10,5,5,10" d="M5 60 L215 60"></path>
+
+
+        </g>
+    </svg>
+
+
+
+
+</body>
+
+</html>

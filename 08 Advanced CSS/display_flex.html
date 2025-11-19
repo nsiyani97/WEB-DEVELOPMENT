@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            /* border: 2px solid white; */
+            color: white;
+        }
+        .parent{
+            display: flex;
+            height: 900px;
+            width: 600px;
+            border: 2px solid red;
+
+            /* width wise justify content */
+
+            /* justify-content: start;(default) */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+
+            /* height wise align item */
+
+            /* align-items: start;(default) */
+            /* align-items: center; */
+            /* align-items: end; */
+
+            /* flex direction */
+            /* flex-direction: row;(default) */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* with column direction align items work on width  */
+            /* with column direction justify-content work on height  */
+           
+           /* align-items: center;
+            justify-content: center; */
+
+
+            column-gap: 25px;
+            row-gap: 50px;
+
+            flex-wrap: wrap;
+             
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+
+</html>

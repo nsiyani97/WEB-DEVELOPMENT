@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: absolute;
+            /* position: relative;  */
+            width: 150px;
+            height: 200px;
+            font-size: 20px;
+        }
+        .length{
+            border: 4px solid green;
+            left: 250px;
+        }
+        .percentage{
+            border: 4px solid blue;
+            left: 60%;
+        }
+        .auto{
+            border: 4px solid orange;
+            left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <comment>
+            <!-- * CSS Positioning property provides the possible ways by which can set the element in different positions as shown below: top, left, right, bottom -->
+    <!-- ** How the property works **
+      - The effects of this property on positioned elements other than the value static are listed as follows:
+      * When the element is absolutely or fixed positioned (i.e., position: absolute; and position: fixed;), the left property specifies the distance between the element's left edge and the left edge of its containing block (ancestor to which the element is relatively positioned).
+      * If the element is relatively positioned (i.e., position: relative;), the left property sets the element's left edge to the left/right from its normal position.
+      * If the position is set to sticky, i.e., position: sticky; then the positioning context is the viewport. When the element is inside the viewport, the left property behaves like its position is relative. When the element is outside, the left property behaves like its position is fixed. -->
+    </comment>
+    <div class="length">
+        left: 250px;
+    </div>
+    <div class="percentage">
+        left: 60%;
+    </div>
+    <div class="auto">
+        left: auto;
+    </div>
+    
+    <!-- * values *
+     * auto : This is the default value.
+     * length : This value defines the position of the property in px, cm, pt, etc. It allows negative values.
+     * percentage : This value defines the position of the property in percentage (%). It is calculated to the width of the element's block. It also allows negative values. -->
+</body>
+
+</html>

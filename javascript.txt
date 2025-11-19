@@ -1,0 +1,23 @@
+let var const 
+array function
+string function
+DOM - 
+BOM - setTimeout & setInterval()
+spreading,merging & destructuring & rest of operator 
+eventListener
+High order function
+callback-hell-promises-async-await
+exception - try_catch_finally
+oops
+1)class - object
+2)inheritance 
+3)polymorphism
+4)data abstraction & encapsulation
+constructor - 2 types - default & parameterized 
+super keyword
+this keyword
+object - getter & setter method
+validation js - regExp -- test
+localstorage crud 
+setItem,getItem,removeItem & clear()
+-----------------------------------
