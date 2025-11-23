@@ -9,14 +9,15 @@
     <form action="#" method="post" onsubmit="submitData(event)">
       <input name="name" id="name" type="text" placeholder="name" />
       <input name="age" id="age" type="number" placeholder="age" />
-      <button type="submit">Submit</button>
+      <input name="email" id="email" type="number" placeholder="email" />
+      <button type="submit" id="btn">Submit</button>
     </form>
     <table>
       <thead>
         <tr>
-          <th>Id</th>
           <th>Name</th>
           <th>Age</th>
+          <th>Email</th>
           <th>Action</th>
         </tr>
       </thead>
@@ -31,9 +32,14 @@
         event.preventDefault();
         let newName = document.getElementById("name").value;
         let newAge = document.getElementById("age").value;
+        let newEmail = document.getElementById("email").value;
 
         if (editId !== null) {
-          data = data.map((item) => (item.id === editId ? { id: item.id, name: newName, age: newAge } : item));
+          data = data.map((item) =>
+            item.id === editId
+              ? { id: item.id, name: newName, age: newAge, email: newEmail }
+              : item
+          );
           editId = null;
         } else {
           let newId = Date.now().toString(36);
@@ -41,6 +47,7 @@
             id: newId,
             name: newName,
             age: newAge,
+            email: newEmail,
           };
           data.push(newData);
         }
@@ -48,6 +55,7 @@
         displayData();
         document.getElementById("name").value = "";
         document.getElementById("age").value = "";
+        document.getElementById("email").value = "";
       }
 
       function displayData() {
@@ -57,9 +65,9 @@
         data.forEach((item) => {
           tbody.innerHTML += `
             <tr>
-              <td>${item.id}</td>
               <td>${item.name}</td>
               <td>${item.age}</td>
+              <td>${item.email}</td>
               <td>
                 <button onclick="editData('${item.id}')">Edit</button>
                 <button onclick="deleteData('${item.id}')">Delete</button>
@@ -74,6 +82,7 @@
 
         document.getElementById("name").value = editEntry.name;
         document.getElementById("age").value = editEntry.age;
+        document.getElementById("email").value = editEntry.email;
 
         editId = id;
       }
@@ -82,6 +91,9 @@
         data = data.filter((item) => item.id !== id);
         displayData();
       }
+
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", (editId != null ? "Update" : "Submit"));
     </script>
   </body>
 </html>

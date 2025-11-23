@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" enctype="" method="" autocomplete="on">
+        <label for="">enter your name</label>
+        <input type="text" name="" id=""><br><br>
+    </form>
+
+    <hr>
+
+    <h1>Form-attributes</h1>
+    <h3>action</h3>
+    <ul>
+        <li>The action attribute defines the action to be performed when the form is submitted.</li>
+
+        <li> Usually, the form data is sent to a file on the server when the user clicks on the submit button.</li>
+    </ul>
+    <h3>method</h3>
+    <ul>
+        <li>The method attribute specifies the HTTP method to be used when submitting the form data.</li>
+        <li>The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with
+            method="post").</li>
+
+        <li>The default HTTP method when submitting form data is GET. </li>
+        <li>GET</li>
+        <ol>
+            <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+            <li>The length of a URL is limited (2048 characters)</li>
+            <li>Useful for form submissions where a user wants to bookmark the result</li>
+        </ol>
+        <li>POST</li>
+        <ol>
+            <li>the submitted form data is not shown in the URL</li>
+            <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+            <li>Form submissions with POST cannot be bookmarked</li>
+        </ol>
+    </ul>
+    <h3>enctype</h3>
+    <ul>
+        <li>The enctype attribute specifies how the form-data should be encoded when submitting it to the server.</li>
+        <ol>
+            <li>application/x-www-form-urlencoded Default. All characters are encoded before sent (spaces are converted
+                to "+" symbols, and special characters are converted to ASCII HEX values)</li>
+            <li>multipart/form-data This value is necessary if the user will upload a file through the form</li>
+            <li>text/plain Sends data without any encoding at all. Not recommended</li>
+        </ol>
+
+    </ul>
+    <h3>autocomplete</h3>
+    <ul>
+        <li>The autocomplete attribute specifies whether a form should have autocomplete on or off.</li>
+
+        <li> When autocomplete is on, the browser automatically complete values based on values that the user has
+            entered before.</li>
+    </ul>
+
+
+</body>
+
+</html>

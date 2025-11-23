@@ -1,0 +1,60 @@
+body {
+  background-color: #f0f2f5;
+}
+
+h1 {
+  font-weight: 500;
+  color: #343a40;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  font-weight: 500;
+}
+
+#messageBox {
+  min-height: 2rem;
+  font-size: 0.95rem;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+}
+
+.sticky-col {
+  position: sticky;
+  background: #fff;
+  z-index: 2;
+}
+
+.first-col  {
+  left: 0;
+  min-width: 80px;
+  z-index: 3;
+}
+
+.last-col {
+  right: 0;
+  min-width: 120px;
+  z-index: 3;
+}
+
+.table th,
+.table td {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    padding: 0.25rem 0.5rem;
+  }
+}

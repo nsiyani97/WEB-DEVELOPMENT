@@ -1,0 +1,118 @@
+.students {
+  width: 500px;
+  border: 1px solid black;
+}
+.students2 {
+  width: 500px;
+  border: 1px solid black;
+}
+.s3head {
+  text-align: center;
+  font-weight: bolder;
+}
+.students3 {
+  width: 500px;
+  border-collapse: collapse;
+}
+.students3 td,
+th {
+  border: 1px solid black;
+}
+.s4th {
+  text-align: center;
+  font-weight: bolder;
+  background-color: darkgreen;
+  color: aliceblue;
+}
+.students4 {
+  width: 500px;
+  border-collapse: collapse;
+}
+.students4 td,
+th {
+  border: 1px solid black;
+}
+.students4 tr:nth-child(even) {
+  background-color: aqua;
+}
+.students4 tr:nth-child(odd) {
+  background-color: aquamarine;
+}
+.s5th {
+  text-align: center;
+  font-weight: bolder;
+  background-color: darkgreen;
+  color: aliceblue;
+}
+.students5 {
+  width: 500px;
+  border-collapse: collapse;
+}
+.students5 td,
+th {
+  border: 1px solid black;
+}
+.students5 td:nth-child(even) {
+  background-color: aqua;
+}
+.students5 td:nth-child(odd) {
+  background-color: aquamarine;
+}
+.students6 {
+  width: 500px;
+  border-collapse: collapse;
+}
+.students6 td {
+  border: 1px solid black;
+}
+.makeBorder {
+  border: 3px solid green !important;
+}
+.table1 {
+  width: 500px;
+  border-collapse: collapse;
+}
+.table1 td {
+  border: 1px solid black;
+}
+.table2 {
+  width: 500px;
+  border-collapse: collapse;
+}
+.table2 td {
+  border: 1px solid black;
+}
+.table3 {
+  width: 500px;
+  border-collapse: collapse;
+}
+.table3 td {
+  border: 1px solid black;
+}
+.table4 {
+  width: 500px;
+  border-collapse: collapse;
+}
+.table4 td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 30px;
+}
+.table5 {
+  width: 500px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+.table5 td {
+  padding-left: 5px;
+  border-left: 1px solid black;
+}
+.table6 {
+  width: 500px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+.table6 td {
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}

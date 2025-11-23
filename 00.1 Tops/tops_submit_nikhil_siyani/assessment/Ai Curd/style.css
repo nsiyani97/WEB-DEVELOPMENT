@@ -1,0 +1,106 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 15px 20px;
+}
+
+/* Smooth transition for form inputs */
+.form-control {
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* =========================================
+   TABLE STYLING & STICKY COLUMNS
+   ========================================= */
+
+.table-responsive {
+  overflow-x: auto;
+  /* relative positioning helps contain the sticky behavior */
+  position: relative;
+}
+
+.table {
+  border-collapse: separate; /* Required for sticky to work well with borders */
+  border-spacing: 0;
+}
+
+.table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.table td {
+  vertical-align: middle;
+  white-space: nowrap; /* Force horizontal scrolling */
+  min-width: 150px; /* Ensure cells have width */
+}
+
+/* Button spacing */
+.btn-sm {
+  margin-right: 5px;
+}
+
+/* --- STICKY LOGIC START --- */
+
+/* 1. Stick the First Column (Name) to the Left */
+.table th:first-child,
+.table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 5;
+  /* Add a shadow border to separate it visually */
+  border-right: 2px solid #dee2e6;
+}
+
+/* 2. Stick the Last Column (Actions) to the Right */
+.table th:last-child,
+.table td:last-child {
+  position: sticky;
+  right: 0;
+  z-index: 5;
+  /* Add a shadow border to separate it visually */
+  border-left: 2px solid #dee2e6;
+}
+
+/* 3. Background Colors (CRITICAL) */
+/* If transparent, text scrolls behind them. We must set backgrounds. */
+
+/* Default cell background (White) */
+.table td:first-child,
+.table td:last-child {
+  background-color: #fff;
+}
+
+/* Header background (Match Bootstrap's table-light gray) */
+.table thead th:first-child,
+.table thead th:last-child {
+  background-color: #f8f9fa;
+  z-index: 10; /* Headers must be above everything */
+}
+
+/* Handle Stripes (Optional fix for striped tables) */
+/* This ensures the sticky columns on striped rows look correct */
+.table-striped > tbody > tr:nth-of-type(odd) > td:first-child,
+.table-striped > tbody > tr:nth-of-type(odd) > td:last-child {
+  background-color: #f2f2f2; /* Match bootstrap striped color */
+}

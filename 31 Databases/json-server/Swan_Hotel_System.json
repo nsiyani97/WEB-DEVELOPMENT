@@ -1,0 +1,33 @@
+{
+  "_comment": "Swan_Hotel_System - http://localhost:3000/",
+  "Swan_Hotel_System": [
+    {
+      "name": "john due",
+      "phone": "1234567890",
+      "email": "djohn1@gmail.com",
+      "aadhar": "123456789012",
+      "address": "excel street",
+      "checkIn": "2025-11-28",
+      "checkOut": "2025-12-06",
+      "adults": "1",
+      "purpose": "vc",
+      "date": "22/11/2025",
+      "id": "6738"
+    },
+    {
+      "id": "d847",
+      "guestName": "dfd",
+      "roomNumber": "1",
+      "price": 323,
+      "createdAt": "2025-11-22T07:56:50.721Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "0262",
+      "name": "Nikhil Siyani",
+      "age": "12",
+      "salary": "12312312"
+    }
+  ]
+}

@@ -7,4 +7,4 @@ The world’s first website: https://info.cern.ch/hypertext/WWW/TheProject.html
 
 **Markup Language** defines how text should appear.
 For example, in English writing, quotation marks — “like this” — tell the reader that a specific part of the text is a quotation.
-In the same way, HTML uses markup (tags) to describe the structure and meaning of content on a webpage.
+In the same way, HTML uses markup (tags like <h1>this is heading</h1>) to describe the structure and meaning of content on a webpage.
