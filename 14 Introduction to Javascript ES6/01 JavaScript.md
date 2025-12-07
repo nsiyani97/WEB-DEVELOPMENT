@@ -6,7 +6,7 @@ Netscape Navigator was a popular browser in the 1990s and one of the first widel
 
 A browser sends a request for data to a server, and the server sends the data back to the browser.
 
-To make websites more dynamic with animations and real-time interaction, some work had to move from the server to the browser. For that, a scripting language was needed to add functionality to websites.
+To make websites more dynamic with animations and real-time interaction servers can not respond instantly to every user action. For that, a scripting language was needed to add functionality to websites.
 
 Brendan Eich created JavaScript in just 10 days. When it was first made, it was called LiveScript. Later, Microsoft reverse-engineered it and made their own version called JScript. These small differences caused confusion, so Europeans standardized the language as ECMAScript (ECMA is the organization’s name). That’s why we now see different versions of ECMAScript.
 

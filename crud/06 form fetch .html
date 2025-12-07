@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="post" onsubmit="newUser(event)">
+      <label for="userName"></label>
+      <input type="text" name="userName" id="userName" />
+      <label for="userTel"></label>
+      <input type="tel" name="userTel" id="userTel" />
+      <label for="userEmail"></label>
+      <input type="email" name="userEmail" id="userEmail" />
+      <button type="submit">Submit</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Tel</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <!-- 
+- fetch returns a Response object first.
+- The Response object has metadata: status, headers, etc.
+- The actual JSON body is not automatically parsed. You have to call .json() to convert the response body into a JavaScript object.
+- .json() itself returns a Promise, so you need another .then() to access the data.
+- So here, there’s an extra step:
+Response object → parse JSON → actual data.
+
+- Axios automatically parses JSON for you.
+- It returns a JavaScript object (or array) in response.data.
+- You don’t need a separate .json() step.
+Axios also adds extra convenience:
+- Rejects the promise on HTTP errors (like 404/500).
+- Lets you set headers, query params, interceptors, and more easily.
+     -->
+    <script>
+      fetch("http://localhost:3333/users")
+        .then((res) => res.json())
+        .then((data) => {
+          let tbody = document.getElementById("tbody");
+          tbody.innerHTML = "";
+          data.map((item) => {
+            tbody.innerHTML += `
+            <tr data-id="${item.id}">
+                <td>${item.id}</td>
+                <td>${item.name}</td>
+                <td>${item.tel}</td>
+                <td>${item.email}</td>
+                <td>
+                    <button onclick="editUser('${item.id}')">Edit</button>
+                    <button onclick="deleteUser('${item.id}')">Delete</button>
+                </td>
+            </tr>
+            `;
+          });
+        });
+
+      let editId = null;
+
+      function newUser(event) {
+        event.preventDefault();
+        let userName = document.getElementById("userName").value;
+        let userTel = document.getElementById("userTel").value;
+        let userEmail = document.getElementById("userEmail").value;
+        if (editId != null) {
+          let updateUser = {
+            name: userName,
+            tel: userTel,
+            email: userEmail,
+          };
+          fetch(`http://localhost:3333/users/${editId}`, {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(updateUser),
+          });
+          editId = null;
+        } else {
+          let newUser = {
+            name: userName,
+            tel: userTel,
+            email: userEmail,
+          };
+          fetch("http://localhost:3333/users", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newUser),
+          });
+        }
+      }
+
+      function editUser(id) {
+        fetch(`http://localhost:3333/users/${id}`)
+          .then((res) => res.json())
+          .then((user) => {
+            document.getElementById("userName").value = user.name;
+            document.getElementById("userTel").value = user.tel;
+            document.getElementById("userEmail").value = user.email;
+          });
+        editId = id;
+      }
+
+      function deleteUser(id) {
+        fetch(`http://localhost:3333/users/${id}`, {
+          method: "DELETE",
+        });
+      }
+    </script>
+  </body>
+</html>

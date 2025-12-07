@@ -21,3 +21,37 @@ validation js - regExp -- test
 localstorage crud 
 setItem,getItem,removeItem & clear()
 -----------------------------------
+what is js?
+types of js
+let var & const
+operators
+if_else elseif nestedif
+switch
+while,do_while & for loop
+array
+for_of & for_in loop
+array_func
+string _func
+UDF - 4 types
+arrow function
+spreading,merging & destructuring & rest of operator 
+object
+object destructuring
+DOM 
+BOM 
+eventListener
+exception
+map,filter advance func
+High order function
+callback-hell-promises-async-await
+localstorage crud
+validation js
+=======================================
+
+oops
+1)class - object
+2)inheritance 
+3)polymorphism
+4)data abstraction & encapsulation
+constructor - 2 types - default & parameterized 
+

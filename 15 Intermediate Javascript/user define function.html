@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1)TNRN -take nothing return nothing
+      function add() {
+        let a = 20;
+        let b = 5;
+        document.write("<br>Addition is " + (a + b));
+      }
+      //2)Take something-return nothing
+      function mult(a, b) {
+        document.write("<br>Multiply is " + a * b);
+      }
+      //3)Take nothing return something
+      function area() {
+        const pi = 3.14;
+        let r = 2.5;
+        return pi * r ** 2;
+      }
+      // 4)Take something return something
+      function cube(a) {
+        return a ** 3;
+      }
+      mult(15, 3);
+      add();
+      // document.write('<br>Area of circle is '+area())
+      let ans = area();
+      document.write("<br>Area of circle is " + ans);
+      document.write("<br>Cube is " + cube(4));
+    </script>
+  </body>
+</html>

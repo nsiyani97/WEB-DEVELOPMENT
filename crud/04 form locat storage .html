@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="post" onsubmit="newUser(event)">
+      <label for="userName"></label>
+      <input type="text" name="userName" id="userName" />
+      <label for="userTel"></label>
+      <input type="tel" name="userTel" id="userTel" />
+      <label for="userEmail"></label>
+      <input type="email" name="userEmail" id="userEmail" />
+      <button type="submit">Submit</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Tel</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <script>
+      window.onload = function () {
+        display();
+      };
+
+      let userData = JSON.parse(localStorage.getItem("userData")) || [];
+      function newUser(event) {
+        event.preventDefault();
+        let userName = document.getElementById("userName").value;
+        let userTel = document.getElementById("userTel").value;
+        let userEmail = document.getElementById("userEmail").value;
+
+        if (editId != null) {
+          userData = userData.map((item) =>
+            item.id === editId
+              ? { ...item, name: userName, tel: userTel, email: userEmail }
+              : item
+          );
+          editId = null;
+        } else {
+          let newId = Date.now() % 10000;
+          let newUser = {
+            id: newId,
+            name: userName,
+            tel: userTel,
+            email: userEmail,
+          };
+          userData.push(newUser);
+        }
+
+        localStorage.setItem("userData", JSON.stringify(userData));
+        console.log(userData);
+        display();
+      }
+
+      function display() {
+        let tbody = document.getElementById("tbody");
+        tbody.innerHTML = "";
+        userData.map((item) => {
+          tbody.innerHTML += `
+                <tr data-id="${item.id}">
+                    <td>${item.id}</td>
+                    <td>${item.name}</td>
+                    <td>${item.tel}</td>
+                    <td>${item.email}</td>
+                    <td>
+                        <button onclick="editUser(${item.id})">Edit</button>
+                        <button onclick="deleteUser(${item.id})">Delete</button>
+                    </td>
+                </tr>
+            `;
+        });
+      }
+      function editUser(id) {
+        let editUser = userData.find((item) => item.id === id);
+        document.getElementById("userName").value = editUser.name;
+        document.getElementById("userTel").value = editUser.tel;
+        document.getElementById("userEmail").value = editUser.email;
+        editId = id;
+      }
+      function deleteUser(id) {
+        let deleteUser = userData.filter((item) => item.id !== id);
+        userData = deleteUser;
+        display();
+      }
+    </script>
+  </body>
+</html>

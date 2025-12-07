@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="post" onsubmit="newUser(event)">
+      <label for="userName"></label>
+      <input type="text" name="userName" id="userName" />
+      <label for="userTel"></label>
+      <input type="tel" name="userTel" id="userTel" />
+      <label for="userEmail"></label>
+      <input type="email" name="userEmail" id="userEmail" />
+      <button type="submit">Submit</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Tel</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      axios.get("http://localhost:3333/users").then((res) => {
+        let data = res.data;
+        let tbody = document.getElementById("tbody");
+        tbody.innerHTML = "";
+        data.map((item) => {
+          tbody.innerHTML += `
+            <tr data-id="${item.id}">
+                <td>${item.id}</td>
+                <td>${item.name}</td>
+                <td>${item.tel}</td>
+                <td>${item.email}</td>
+                <td>
+                    <button onclick="editUser('${item.id}')">Edit</button>
+                    <button onclick="deleteUser('${item.id}')">Delete</button>
+                </td>
+            </tr>
+            `;
+        });
+      });
+
+      let editId = null;
+
+      function newUser(event) {
+        event.preventDefault();
+        let userName = document.getElementById("userName").value;
+        let userTel = document.getElementById("userTel").value;
+        let userEmail = document.getElementById("userEmail").value;
+        if (editId != null) {
+          axios.patch(`http://localhost:3333/users/${editId}`, {
+            name: userName,
+            tel: userTel,
+            email: userEmail,
+          });
+          editId = null;
+        } else {
+          axios.post("http://localhost:3333/users", {
+            name: userName,
+            tel: userTel,
+            email: userEmail,
+          });
+        }
+      }
+
+      function editUser(id) {
+        axios.get(`http://localhost:3333/users/${id}`).then((res) => {
+          let user = res.data;
+          document.getElementById("userName").value = user.name;
+          document.getElementById("userTel").value = user.tel;
+          document.getElementById("userEmail").value = user.email;
+        });
+        editId = id;
+      }
+
+      function deleteUser(id) {
+        axios.delete(`http://localhost:3333/users/${id}`);
+      }
+    </script>
+  </body>
+</html>
