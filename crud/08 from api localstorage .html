@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="post" onsubmit="newUser(event)">
+      <label for="userName"></label>
+      <input type="text" name="userName" id="userName" />
+      <label for="userTel"></label>
+      <input type="tel" name="userTel" id="userTel" />
+      <label for="userEmail"></label>
+      <input type="email" name="userEmail" id="userEmail" />
+      <button type="submit">Submit</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Tel</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <script>
+      let userData = [];
+
+      fetch("http://localhost:3333/users")
+        .then((res) => res.json())
+        .then((data) => {
+          userData.push(...data);
+          localStorage.setItem("data", JSON.stringify(userData));
+
+          let tbody = document.getElementById("tbody");
+          tbody.innerHTML = "";
+          userData.map((item) => {
+            tbody.innerHTML += `
+            <tr data-id = "${item.id}">
+                <td>${item.id}</td>
+                <td>${item.name}</td>
+                <td>${item.tel}</td>
+                <td>${item.email}</td>
+            </tr>
+            `;
+          });
+        });
+    </script>
+  </body>
+</html>
