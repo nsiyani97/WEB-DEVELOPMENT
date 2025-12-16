@@ -1,18 +1,33 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { allUser, newUser } from "../redux/action";
+import { allUser, deleteUser, editUser, newUser } from "../redux/action";
 
 function Form() {
   const dispatch = useDispatch();
+
   const data = useSelector((state) => state.form.data);
   const userData = useSelector((state) => state.form.userData);
+
   function handleChange(e) {
     dispatch(newUser({ [e.target.name]: e.target.value }));
   }
+
   function handleSubmit(e) {
     e.preventDefault();
-    dispatch(allUser({ ...userData, id: Date.now() }));
-    console.log(data);
+
+    if (editId) {
+      dispatch(updateUser({ ...userData, id: editId }));
+    } else {
+      dispatch(allUser({ ...userData, id: Date.now() }));
+    }
+  }
+
+  function handleEdit(id) {
+    dispatch(editUser(id));
+  }
+
+  function handleDelete(id) {
+    dispatch(deleteUser(id));
   }
 
   return (
@@ -45,8 +60,8 @@ function Form() {
                 <td>{item.tel}</td>
                 <td>{item.email}</td>
                 <td>
-                  <button onClick={() => editUser(item.id)}>Edit</button>
-                  <button onClick={() => deleteUser(item.id)}>Delete</button>
+                  <button onClick={() => handleEdit(item.id)}>Edit</button>
+                  <button onClick={() => handleDelete(item.id)}>Delete</button>
                 </td>
               </tr>
             );

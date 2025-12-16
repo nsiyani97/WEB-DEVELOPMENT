@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase CRUD</title>
+  </head>
+  <body>
+    <h2>User Form</h2>
+
+    <form onsubmit="newUser(event)">
+      <input type="text" id="userName" name="userName" placeholder="Name" required />
+      <input type="tel" id="userTel" name="userTel" placeholder="Phone" required />
+      <input type="email" id="userEmail" name="userEmail" placeholder="Email" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <hr />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Tel</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <!-- ✅ SCRIPT -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+      import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc, updateDoc } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+
+      // 🔥 REPLACE WITH YOUR FIREBASE CONFIG
+      const firebaseConfig = {
+        apiKey: "AIzaSyB4GW8B0OA9wzX4UAiBeLDa3w0eWGNFez8",
+        authDomain: "my-first-project-bec63.firebaseapp.com",
+        projectId: "my-first-project-bec63",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      let editId = null;
+
+      // ✅ CREATE / UPDATE USER
+      async function newUser(event) {
+        event.preventDefault();
+
+        const form = event.target;
+
+        const name = form.userName.value;
+        const tel = form.userTel.value;
+        const email = form.userEmail.value;
+
+        console.log("DEBUG:", name, tel, email); // 👈 should NEVER be undefined
+
+        if (editId) {
+          await updateDoc(doc(db, "users", editId), { name, tel, email });
+          editId = null;
+        } else {
+          await addDoc(collection(db, "users"), { name, tel, email });
+        }
+
+        form.reset();
+        loadUsers();
+      }
+
+      // ✅ READ USERS
+      async function loadUsers() {
+        const tbody = document.getElementById("tbody");
+        tbody.innerHTML = "";
+
+        const snapshot = await getDocs(collection(db, "users"));
+        snapshot.forEach((docSnap) => {
+          const user = docSnap.data();
+          tbody.innerHTML += `
+            <tr>
+              <td>${docSnap.id}</td>
+              <td>${user.name}</td>
+              <td>${user.tel}</td>
+              <td>${user.email}</td>
+              <td>
+                <button onclick="editUser('${docSnap.id}', '${user.name}', '${user.tel}', '${user.email}')">Edit</button>
+                <button onclick="deleteUser('${docSnap.id}')">Delete</button>
+              </td>
+            </tr>
+          `;
+        });
+      }
+
+      // ✅ EDIT USER
+      function editUser(id, name, tel, email) {
+        document.getElementById("userName").value = name;
+        document.getElementById("userTel").value = tel;
+        document.getElementById("userEmail").value = email;
+        editId = id;
+      }
+
+      // ✅ DELETE USER
+      async function deleteUser(id) {
+        await deleteDoc(doc(db, "users", id));
+        loadUsers();
+      }
+
+      // 🌍 EXPOSE FUNCTIONS (IMPORTANT)
+      window.newUser = newUser;
+      window.editUser = editUser;
+      window.deleteUser = deleteUser;
+
+      // INITIAL LOAD
+      loadUsers();
+    </script>
+  </body>
+</html>

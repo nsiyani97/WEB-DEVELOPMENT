@@ -8,7 +8,7 @@ Example: google.com
 
 Internet doesn’t understand names → it uses numbers (IP address).
 DNS tells your device:
-👉 “google.com = 142.250.xx.xx” https://www.nslookup.io/
+“google.com = 142.250.xx.xx” https://www.nslookup.io/
 
 3. Your device sends request to your Wi-Fi router
 

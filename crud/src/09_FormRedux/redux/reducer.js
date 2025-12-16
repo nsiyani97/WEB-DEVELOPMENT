@@ -1,4 +1,4 @@
-import { add_user, add_user_to_data } from "./action";
+import { add_user, add_user_to_data, delete_user, edit_user, update_user } from "./action";
 
 // 1. initialize state and it's properties
 const initialState = {
@@ -9,6 +9,7 @@ const initialState = {
     tel: "",
     email: "",
   },
+  editId: null,
 };
 
 // 2. export slice function to reducer
@@ -26,7 +27,23 @@ export const form = (state = initialState, action) => {
         ...state,
         data: [...state.data, action.payload],
       };
-
+    case edit_user:
+      return {
+        ...state,
+        editId: (state.data = action.payload),
+      };
+    case update_user:
+      return {
+        ...state,
+        data: state.data.map((item) => (item.id === action.payload.id ? action.payload : item)),
+        userData: { name: "", tel: "", email: "" }, // reset form
+        editId: null,
+      };
+    case delete_user:
+      return {
+        ...state,
+        data: state.data.filter((item) => item.id !== action.payload),
+      };
     default:
       return state;
   }

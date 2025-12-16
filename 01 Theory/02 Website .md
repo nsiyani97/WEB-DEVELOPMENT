@@ -2,29 +2,20 @@
 
 - first website https://info.cern.ch/hypertext/WWW/TheProject.html
 
-A website is built using:
-
-HTML → structure
-
-CSS → design
-
-JavaScript → interaction
-
-Backend (optional) → database, login, API, etc.
-
-Database → stores user info, products, messages etc.
+- A website is built using:
+  HTML → structure
+  CSS → design
+  JavaScript → interaction
+  Backend (optional) → database, login, API, etc.
+  Database → stores user info, products, messages etc.
 
 2. Files are uploaded to a server
 
-Developers host the website on:
-
-Hosting (Hostinger, GoDaddy)
-
-Cloud (AWS, Google Cloud)
-
-VPS (DigitalOcean)
-
-CDN (Cloudflare)
+- Developers host the website on:
+  Hosting (Hostinger, GoDaddy)
+  Cloud (AWS, Google Cloud)
+  VPS (DigitalOcean)
+  CDN (Cloudflare)
 
 This server is always ON.
 
