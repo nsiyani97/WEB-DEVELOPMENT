@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Manipulation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  Create an HTML page with a paragraph (<p>) that displays "Hello, World!".
+          Use JavaScript to:
+         • Change the text inside the paragraph to "JavaScript is fun!".
+         • Change the color of the paragraph to blue.
+    -->
+    <p id="message">Hello, World!</p>
+
+    <script>
+      // Select the paragraph element
+      const paragraph = document.getElementById("message");
+
+      // Change the text inside the paragraph
+      paragraph.textContent = "JavaScript is fun!";
+
+      // Change the color of the paragraph to blue
+      paragraph.style.color = "blue";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+body {
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+}
+
+.navbar {
+  border-bottom: 1px solid #eee;
+  background-color: #fff !important;
+}
+
+.navbar-brand {
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: none !important;
+}
+
+.card-header {
+  background-color: transparent !important;
+  border-bottom: 1px solid #eee;
+  padding: 1.5rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.6rem 0.8rem;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border-color: #333;
+}
+
+/* Minimal Buttons */
+.btn {
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  box-shadow: none !important;
+}
+
+.btn-primary {
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Table Styling */
+.table th {
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #666;
+  white-space: nowrap;
+}
+
+.table td {
+  vertical-align: middle;
+  min-width: 120px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .card-header,
+  .card-body {
+    padding: 1rem;
+  }
+
+  .table td {
+    min-width: unset; /* let content flow or force scroll */
+  }
+
+  /* Ensure horizontal scroll on small devices for table */
+  .table-responsive {
+    border: 1px solid #eee;
+    border-radius: 4px;
+  }
+}

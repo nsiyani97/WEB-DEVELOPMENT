@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Firebase Snapshot CRUD</h1>
+    <hr />
+    <form>
+      <label for="name"></label>
+      <input type="text" name="name" id="name" placeholder="Name" />
+      <label for="tel"></label>
+      <input type="tel" name="tel" id="tel" placeholder="Tel" />
+      <label for="email"></label>
+      <input type="email" name="email" id="email" placeholder="Email" />
+      <button type="submit">Submit</button>
+    </form>
+    <table border="1" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Tel</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-analytics.js";
+      import { getFirestore, collection, onSnapshot, addDoc } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-firestore.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyB4GW8B0OA9wzX4UAiBeLDa3w0eWGNFez8",
+        authDomain: "my-first-project-bec63.firebaseapp.com",
+        projectId: "my-first-project-bec63",
+        storageBucket: "my-first-project-bec63.firebasestorage.app",
+        messagingSenderId: "701356026896",
+        appId: "1:701356026896:web:40ff4d86e2042525b4ee95",
+        measurementId: "G-2QQL1EC1GZ",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const db = getFirestore(app);
+
+      const userRef = collection(db, "users");
+
+      onSnapshot(userRef, (snapshot) => {
+        const tbody = document.getElementById("tbody");
+        tbody.innerHTML = "";
+
+        snapshot.forEach((doc) => {
+          const data = doc.data();
+          const id = doc.id;
+
+          tbody.innerHTML += `
+          <tr>
+            <td>${id}</td>
+            <td>${data.name}</td>
+            <td>${data.tel}</td>
+            <td>${data.email}</td>
+            <td>
+              <button onclick="editUser('${id}')">Edit</button>
+              <button onclick="deleteUser('${id}')">Delete</button>
+            </td>
+          </tr>
+          `;
+        });
+      });
+
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        let name = document.getElementById("name").value;
+        let tel = document.getElementById("tel").value;
+        let email = document.getElementById("email").value;
+
+        addDoc(userRef, {
+          name: name,
+          tel: tel,
+          email: email,
+        });
+
+        document.getElementById("name").value = "";
+        document.getElementById("tel").value = "";
+        document.getElementById("email").value = "";
+      });
+
+      
+    </script>
+  </body>
+</html>
