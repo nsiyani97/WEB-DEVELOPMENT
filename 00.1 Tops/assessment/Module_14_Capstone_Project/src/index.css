@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+input,
+textarea,
+select {
+  display: block;
+  margin: 6px 0;
+  padding: 6px;
+}
+button {
+  padding: 6px 10px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+table {
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid #ccc;
+  padding: 6px;
+}

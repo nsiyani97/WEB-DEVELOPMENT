@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo-blue {
+  color: #1e90ff;
+}
+
+nav {
+  background: #111;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #444;
+  border-radius: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar .dropdown {
+  background: #fff;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.drop-btn {
+  width: 100%;
+  padding: 10px;
+  background: #222;
+  color: #fff;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.drop-content {
+  list-style: none;
+  display: block;
+  padding: 10px;
+}
+
+.drop-content li {
+  margin: 8px 0;
+}
+
+.drop-content li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.drop-content li a:hover {
+  color: #1e90ff;
+}
+
+
+.ads-sidebar .ad-small,
+.ads-sidebar .ad-large {
+  background: #ddd;
+  border: 1px solid #aaa;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.ads-sidebar .ad-small {
+  height: 120px;
+}
+
+.ads-sidebar .ad-large {
+  height: 250px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}

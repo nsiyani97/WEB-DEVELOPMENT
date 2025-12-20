@@ -1,26 +1,22 @@
-import React from 'react';
-import FeedbackForm from './components/FeedbackForm';
-import FeedbackTable from './components/FeedbackTable';
-import './App.css';
+import React from "react";
+import FeedbackForm from "./components/FeedbackForm";
+import FeedbackTable from "./features/feedback/FeedbackTable";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fetchBookings } from "./features/feedback/feedbackSlice";
 
-function App() {
+export default function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBookings());
+  }, []);
+
   return (
-    <div className="container py-5">
-      <header className="mb-5 text-center">
-        <h1 className="display-4">Hotel Booking Management</h1>
-        <p className="lead text-muted">Feedback System Dashboard</p>
-      </header>
-      
-      <div className="row g-5">
-        <div className="col-lg-5">
-          <FeedbackForm />
-        </div>
-        <div className="col-lg-7">
-          <FeedbackTable />
-        </div>
-      </div>
-    </div>
+    <>
+      <h2>Hotel Feedback</h2>
+      <FeedbackForm />
+      <FeedbackTable />
+    </>
   );
 }
-
-export default App;

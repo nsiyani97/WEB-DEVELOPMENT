@@ -2,17 +2,17 @@
   "bookings": [
     {
       "id": "1",
-      "name": "Jane Doe",
+      "name": "Amit Sharma",
       "phone": "9876543210",
-      "comment": "Great service!",
-      "rating": "5"
+      "comment": "Great stay, clean rooms and polite staff.",
+      "rating": 5
     },
     {
-      "id": "39a8",
-      "name": "sdfsd`",
+      "id": "8626",
+      "name": "Nikhil Siyani",
       "phone": "1234567890",
-      "comment": "ewrfdgxhtyrea wasd",
-      "rating": "3"
+      "comment": "kljd fklsejk fjksel",
+      "rating": "2"
     }
   ]
 }
