@@ -1,0 +1,29 @@
+/* Responsive Grid for Form  */
+.container {
+  max-width: 960px;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Ensure mobile friendly table  */
+.table-responsive {
+  min-height: 200px;
+}
+
+.invalid-feedback {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .row.g-4 {
+    --bs-gutter-y: 1rem;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paramount Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <span class="navbar-brand mb-0 h1">Swan Hotel System</span>
+        <div class="ms-auto">
+          <a href="index.html" class="btn btn-primary btn-sm me-2">Registration</a>
+          <a href="view.html" class="btn btn-outline-dark btn-sm">View Bookings</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="mb-0 text-center fw-light">Guest Registration</h4>
+            </div>
+            <div class="card-body">
+              <div id="uiMessage" class="alert d-none"></div>
+
+              <form id="bookingForm" novalidate>
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label text-muted small">FULL NAME</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter guest name" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label text-muted small">PHONE NUMBER</label>
+                    <input type="number" class="form-control" id="phone" placeholder="10 Digit Mobile" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email" class="form-label text-muted small">EMAIL ADDRESS</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="aadhar" class="form-label text-muted small">AADHAR NUMBER</label>
+                    <input type="number" class="form-control" id="aadhar" placeholder="12 Digit Number" required />
+                  </div>
+
+                  <div class="col-12">
+                    <label for="address" class="form-label text-muted small">ADDRESS</label>
+                    <textarea class="form-control" id="address" rows="2" required></textarea>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="checkIn" class="form-label text-muted small">CHECK-IN</label>
+                    <input type="date" class="form-control" id="checkIn" required />
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="checkOut" class="form-label text-muted small">CHECK-OUT</label>
+                    <input type="date" class="form-control" id="checkOut" required />
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="adults" class="form-label text-muted small">ADULTS</label>
+                    <input type="number" class="form-control" id="adults" min="1" value="1" required />
+                  </div>
+
+                  <div class="col-12">
+                    <label for="purpose" class="form-label text-muted small">PURPOSE</label>
+                    <textarea class="form-control" id="purpose" rows="2" required></textarea>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-primary w-100 py-2">Register Guest</button>
+                    <button type="button" class="btn btn-link text-muted w-100 mt-2 text-decoration-none" id="btnReset">Clear Form</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

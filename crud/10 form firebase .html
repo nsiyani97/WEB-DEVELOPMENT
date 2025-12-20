@@ -111,18 +111,6 @@
         document.getElementById("email").value = "";
       });
 
-      // function newUser(event) {
-      //   event.preventDefault();
-      //   let name = document.getElementById("name").value;
-      //   let tel = document.getElementById("tel").value;
-      //   let email = document.getElementById("email").value;
-      //   addDoc(collection(db, "users"), {
-      //     name: name,
-      //     tel: tel,
-      //     email: email,
-      //   });
-      // }
-
       window.editUser = async function (id) {
         const docRef = doc(db, "users", id); // creates a reference of user
         const docSnap = await getDoc(docRef); // fetch the document of user

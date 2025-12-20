@@ -1,14 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore, getDocs, collection, addDoc } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import { getFirestore } from "firebase/firestore";
+import { collection, getDocs, addDoc, doc, getDoc, deleteDoc, updateDoc } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyB4GW8B0OA9wzX4UAiBeLDa3w0eWGNFez8",
   authDomain: "my-first-project-bec63.firebaseapp.com",
@@ -18,10 +12,7 @@ const firebaseConfig = {
   appId: "1:701356026896:web:40ff4d86e2042525b4ee95",
   measurementId: "G-2QQL1EC1GZ",
 };
-
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const db = getFirestore(app);
 
 function FormFirebase() {
@@ -31,25 +22,53 @@ function FormFirebase() {
     tel: "",
     email: "",
   });
-  // const [editId, setEditId] = useState(null);
-  function handleChange(e) {
-    setUser({ ...user, [e.target.name]: e.target.value });
-  }
-  function handleSubmit(e) {
-    e.preventDefault();
-    setData([...data, user]);
-  }
-  useEffect(() => {
-    const firestore = getDocs(collection(db, "users"));
+  const [editId, setEditId] = useState(null);
+
+  const fetchUsers = async () => {
+    const snapshot = await getDocs(collection(db, "users"));
     let userData = [];
-    firestore.forEach((doc) => {
+    snapshot.forEach((doc) => {
       let data = doc.data();
       let id = doc.id;
       userData.push({ ...data, id });
     });
     setData(userData);
+  };
+
+  useEffect(() => {
+    fetchUsers();
   }, []);
 
+  function handleChange(e) {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    if (editId != null) {
+      await updateDoc(doc(db, "users", editId), user);
+      setEditId(null);
+    } else {
+      const docRef = await addDoc(collection(db, "users"), user);
+      setData([...data, { ...user, id: docRef.id }]);
+    }
+
+    setUser({ name: "", tel: "", email: "" });
+    fetchUsers();
+  }
+  async function editUser(item) {
+    setUser({
+      name: item.name,
+      tel: item.tel,
+      email: item.email,
+    });
+    setEditId(item.id);
+  }
+  async function deleteUser(id) {
+    await deleteDoc(doc(db, "users", id));
+    fetchUsers();
+  }
   return (
     <div>
       <form action="#" method="post" onSubmit={handleSubmit}>
@@ -80,8 +99,8 @@ function FormFirebase() {
                 <td>{item.tel}</td>
                 <td>{item.email}</td>
                 <td>
-                  {/* <button onClick={() => editUser(item.id)}>Edit</button>
-                  <button onClick={() => deleteUser(item.id)}>Delete</button> */}
+                  <button onClick={() => editUser(item)}>Edit</button>
+                  <button onClick={() => deleteUser(item.id)}>Delete</button>
                 </td>
               </tr>
             );

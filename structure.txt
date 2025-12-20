@@ -1,0 +1,856 @@
+﻿Folder PATH listing for volume New Volume
+Volume serial number is XXXX-XXXX
+D:.
++---00.1 Tops
+|   +---assessment
+|   |   +---Javascript_Essentials_And_Advanced
+|   |   |   +---frontenddevelopment_assessment_2405_1755412302.pdf
+|   |   |   +---index.html
+|   |   |   +---script.js
+|   |   |   +---style.css
+|   |   |   +---view.html
+|   |   +---Module_14_Capstone_Project
+|   |   |   +---frontenddevelopment_assessment_1512_1755412124.pdf
+|   |   +---Wd_Framework
+|   |       +---frontenddevelopment_assessment_1504_1755412635.pdf
+|   +---assignment
+|   |   +---Module_8_JavaScript
+|   |   |   +---01 JavaScript Introduction
+|   |   |   |   +---lab
+|   |   |   |   |   +---lab.html
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---02 Variables and Data Types
+|   |   |   |   +---lab
+|   |   |   |   |   +---lab.html
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---03 JavaScript Operators
+|   |   |   |   +---lab
+|   |   |   |   |   +---lab.html
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---04 Control Flow (If-Else, Switch)
+|   |   |   |   +---lab
+|   |   |   |   |   +---task_1.js
+|   |   |   |   |   +---task_2.js
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---05 Loops (For, While, Do-While)
+|   |   |   |   +---lab
+|   |   |   |   |   +---task_1.js
+|   |   |   |   |   +---task_2.js
+|   |   |   |   |   +---task_3.js
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---06 Functions
+|   |   |   |   +---lab
+|   |   |   |   |   +---task_1.js
+|   |   |   |   |   +---task_2.js
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---07 Arrays
+|   |   |   |   +---lab
+|   |   |   |   |   +---task_1.js
+|   |   |   |   |   +---task_2.js
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---08 Objects
+|   |   |   |   +---lab
+|   |   |   |   |   +---task.js
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---09 JavaScript Events
+|   |   |   |   +---lab
+|   |   |   |   |   +---task.html
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---10 DOM Manipulation
+|   |   |   |   +---lab
+|   |   |   |   |   +---lab.html
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---11 JavaScript Timing Events (setTimeout, setInterval)
+|   |   |   |   +---lab
+|   |   |   |   |   +---lab.html
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---12 JavaScript Error Handling
+|   |   |       +---lab
+|   |   |       |   +---lab.html
+|   |   |       |   +---task.js
+|   |   |       +---theory
+|   |   |           +---theory.md
+|   |   +---Module_9_ReactJs
+|   |   |   +---01_Introduction_to_ReactJs
+|   |   |   |   +---lab
+|   |   |   |   |   +---Task_1.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---02_JSX_(JavaScript_XML)
+|   |   |   |   +---lab
+|   |   |   |   |   +---App.jsx
+|   |   |   |   |   +---Task_1.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---03_Components_(Functional_&_Class_Components)
+|   |   |   |   +---lab
+|   |   |   |   |   +---App.jsx
+|   |   |   |   |   +---Task_1.jsx
+|   |   |   |   |   +---Task_2.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---04_Props_and_State
+|   |   |   |   +---lab
+|   |   |   |   |   +---App.jsx
+|   |   |   |   |   +---Task_1.jsx
+|   |   |   |   |   +---Task_2.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---05_Handling_Events_in_React
+|   |   |   |   +---lab
+|   |   |   |   |   +---App.jsx
+|   |   |   |   |   +---Task_1.jsx
+|   |   |   |   |   +---Task_2.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---06_Conditional_Rendering
+|   |   |   |   +---lab
+|   |   |   |   |   +---App.jsx
+|   |   |   |   |   +---Task_1.jsx
+|   |   |   |   |   +---Task_2.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---07_Lists_and_Keys
+|   |   |   |   +---lab
+|   |   |   |   |   +---App.jsx
+|   |   |   |   |   +---Task_1.jsx
+|   |   |   |   |   +---Task_2.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---08_Forms_in_React
+|   |   |   |   +---lab
+|   |   |   |   |   +---App.jsx
+|   |   |   |   |   +---Task_1.jsx
+|   |   |   |   |   +---Task_2.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---09_Lifecycle_Methods_(Class_Components)
+|   |   |   |   +---lab
+|   |   |   |   |   +---App.jsx
+|   |   |   |   |   +---Task_1.jsx
+|   |   |   |   |   +---Task_2.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---10_Hooks_(useState,_useEffect,_useReducer,_useMemo,_useRef,_useCallback)
+|   |   |   |   +---lab
+|   |   |   |   |   +---App.jsx
+|   |   |   |   |   +---index.js
+|   |   |   |   |   +---store.js
+|   |   |   |   |   +---Task_1.jsx
+|   |   |   |   |   +---Task_2.jsx
+|   |   |   |   |   +---Task_3.jsx
+|   |   |   |   |   +---Task_4.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---11_Routing_in_React_(React_Router)
+|   |   |   |   +---lab
+|   |   |   |   |   +---components
+|   |   |   |   |   |   +---Navbar.jsx
+|   |   |   |   |   +---pages
+|   |   |   |   |   |   +---About.jsx
+|   |   |   |   |   |   +---Contact.jsx
+|   |   |   |   |   |   +---Home.jsx
+|   |   |   |   |   +---App.jsx
+|   |   |   |   |   +---index.js
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---12_React_–_JSON-server_and_Firebase_Real_Time_Database
+|   |   |   |   +---lab
+|   |   |   |   |   +---App.jsx
+|   |   |   |   |   +---db.json
+|   |   |   |   |   +---firebase.js
+|   |   |   |   |   +---Task_1a_3.jsx
+|   |   |   |   |   +---Task_1b.jsx
+|   |   |   |   |   +---Task_2.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---13_Context_API
+|   |   |   |   +---lab
+|   |   |   |   |   +---Task_1
+|   |   |   |   |   |   +---components
+|   |   |   |   |   |   |   +---ThemeContext.jsx
+|   |   |   |   |   |   +---context
+|   |   |   |   |   |       +---ThemedBox.jsx
+|   |   |   |   |   |       +---ThemeToggle.jsx
+|   |   |   |   |   +---Task_2
+|   |   |   |   |   |   +---components
+|   |   |   |   |   |   |   +---AuthContext.jsx
+|   |   |   |   |   |   +---context
+|   |   |   |   |   |       +---AuthStatus.jsx
+|   |   |   |   |   +---App.jsx
+|   |   |   |   +---theory
+|   |   |   |       +---theory.md
+|   |   |   +---14_State_Management_(Redux,_Redux-Toolkit_or_Recoil)
+|   |   |       +---lab
+|   |   |       |   +---components
+|   |   |       |   |   +---CounterRedux.jsx
+|   |   |       |   |   +---CrudReduxToolkit.jsx
+|   |   |       |   |   +---TodoRecoil.jsx
+|   |   |       |   +---recoil
+|   |   |       |   |   +---todoState.js
+|   |   |       |   +---redux
+|   |   |       |   |   +---counterReducer.js
+|   |   |       |   |   +---crudSlice.js
+|   |   |       |   |   +---store.js
+|   |   |       |   +---App.jsx
+|   |   |       |   +---index.js
+|   |   |       +---theory
+|   |   |           +---theory.md
+|   |   +---frontenddevelopment_assignment_1731745908.pdf
+|   +---project
+|   |   +---pages
+|   |   |   +---about.html
+|   |   |   +---articles.html
+|   |   |   +---community.html
+|   |   |   +---contact.html
+|   |   |   +---home.html
+|   |   |   +---photos.html
+|   |   +---index.html
+|   |   +---megazzine.pdf
+|   |   +---script.js
+|   |   +---style.css
+|   +---mernstack.pdf
+|   +---mernstack_assignment_1704787640.pdf
++---01 Theory
+|   +---01 Internet .md
+|   +---02 Website .md
+|   +---03 HTML.md
+|   +---03.1 html_preparation.pdf
+|   +---04 CSS .md
+|   +---04.1 css_preparation.pdf
+|   +---05 JavaScript .md
+|   +---05.1 Javascript assignment .md
+|   +---05.2 Js class notes.md
+|   +---05.3 javascript_preparation.pdf
+|   +---05.4 javascript concepts .md
+|   +---06 React assignment .md
+|   +---06.1 reactjs_preparation.pdf
+|   +---06.2 React calss notes.md
++---02 Introduction to HTML
+|   +---2.1 Heading Element
+|   |   +---goal.png
+|   |   +---heading_paragraph.html
+|   |   +---index.html
+|   +---2.2 Paragraph Element
+|   |   +---goal.png
+|   |   +---index.html
+|   +---2.3 Void Elements
+|   |   +---goal.png
+|   |   +---index.html
+|   +---02 The HTML Boilerplate.html
+|   +---2.6 tag_vs_element.html
+|   +---2.7 formatting_tag.html
+|   +---2.8 entities_symbols.html
++---03 Intermediate HTML
+|   +---3.0 List Elements & Description
+|   |   +---description.html
+|   |   +---nested list 1.html
+|   |   +---nested list 2.html
+|   |   +---WhatsApp Image 2024-05-15 at 22.35.24_153a2e7f.jpg
+|   |   +---WhatsApp Image 2024-05-15 at 22.35.24_ff3be305.jpg
+|   +---3.1 Nesting and Indentation
+|   |   +---goal.png
+|   |   +---index.html
+|   +---3.2 Anchor Elements
+|   |   +---goal.png
+|   |   +---index.html
+|   +---3.4 Birthday Invite Project
+|   |   +---goal.png
+|   |   +---index.html
+|   +---3.5 Image Mapping
+|   |   +---image maping.html
+|   |   +---image maping.png
+|   +---3.6 Form
+|   |   +---Form .....html
+|   |   +---form-attributes.html
+|   |   +---input-types.html
+|   |   +---input_attributes.html
+|   +---3.7 Table
+|   |   +---01 Intro.html
+|   |   +---Cars.html
+|   |   +---European Roulette.html
+|   |   +---Puzzle.html
+|   |   +---rowspan & colsapn.html
+|   |   +---Table Practice.css
+|   |   +---Table Practice.html
+|   |   +---Time Table.html
+|   |   +---WhatsApp Image 2024-05-15 at 22.36.13_0ec5e896.jpg
+|   |   +---WhatsApp Image 2024-05-15 at 22.36.13_bf35b15a.jpg
+|   |   +---WhatsApp Image 2024-05-15 at 22.36.13_e571a1db.jpg
+|   +---image_mapping.html
+|   +---paths and image.html
++---04 Multi-Page Website
+|   +---4.0 File Paths
+|   |   +---Folder0
+|   |   |   +---Folder3
+|   |   |   |   +---cat.png
+|   |   |   +---goal.png
+|   |   |   +---index.html
+|   |   |   +---rabbit.png
+|   |   +---Folder1
+|   |   |   +---Folder2
+|   |   |   |   +---bird.png
+|   |   |   +---fish.png
+|   |   +---dog.png
+|   +---4.1 Webpages
+|   |   +---assets
+|   |   |   +---images
+|   |   |       +---cat.png
+|   |   +---public
+|   |   |   +---about.html
+|   |   |   +---contact.html
+|   |   +---index.html
+|   +---4.2 my_first_project
+|   |   +---1.jpg
+|   |   +---2.jpg
+|   |   +---module_3.html
+|   +---4.3 HTML Porfolio Project
+|   |   +---assets
+|   |   |   +---images
+|   |   |       +---birthday-invite.png
+|   |   |       +---movie-ranking.png
+|   |   +---public
+|   |   |   +---about.html
+|   |   |   +---birthday-invite.html
+|   |   |   +---contact.html
+|   |   |   +---movie-ranking.html
+|   |   +---goal.png
+|   |   +---index.html
+|   +---4.4 iFrame
+|   |   +---iframe.html
+|   |   +---index.html
+|   |   +---introiframe.html
+|   |   +---output.jpg
+|   +---4.5 Marquee
+|   |   +---h.png
+|   |   +---i.png
+|   |   +---i1.png
+|   |   +---k.png
+|   |   +---l.png
+|   |   +---marquee.html
+|   |   +---N.jpg
+|   +---favicon.html
+|   +---icons.html
+|   +---intro_Audio Tag.html
+|   +---intro_SVG Gradient.html
+|   +---intro_SVG path.html
+|   +---intro_SVG shapes.html
+|   +---intro_Video Tag.html
++---05 Introduction to CSS
+|   +---5.1. Adding CSS
+|   |   +---external.html
+|   |   +---index.html
+|   |   +---inline.html
+|   |   +---internal.html
+|   |   +---style.css
+|   +---5.3 CSS Selectors
+|   |   +---solution
+|   |   |   +---solution-style.css
+|   |   |   +---solution.html
+|   |   +---goal.png
+|   |   +---index.html
+|   |   +---style.css
+|   +---5.4 Color+Vocab+Project
+|       +---assets
+|       |   +---images
+|       |       +---blue.png
+|       |       +---green.png
+|       |       +---orange.png
+|       |       +---red.png
+|       |       +---yellow.png
+|       +---solution
+|       |   +---assets
+|       |   |   +---images
+|       |   |       +---blue.png
+|       |   |       +---green.png
+|       |   |       +---orange.png
+|       |   |       +---red.png
+|       |   |       +---yellow.png
+|       |   +---solution.html
+|       |   +---style.css
+|       +---goal.png
+|       +---index.html
++---06 CSS Properties
+|   +---6.0 CSS Colors
+|   |   +---goal.png
+|   |   +---index.html
+|   |   +---solution.html
+|   +---6.1 Font Properties
+|   |   +---font-family.html
+|   |   +---font-size.html
+|   |   +---goal.png
+|   |   +---index.html
+|   |   +---solution.html
+|   +---6.3 CSS Box Model
+|   |   +---goal.png
+|   |   +---index.html
+|   |   +---solution.html
+|   +---6.4 Motivation Meme Project
+|       +---assets
+|       |   +---images
+|       |       +---daenerys.jpeg
+|       +---solution
+|       |   +---assets
+|       |   |   +---images
+|       |   |       +---daenerys.jpeg
+|       |   +---solution.css
+|       |   +---solution.html
+|       +---goal.png
+|       +---index.html
+|       +---style.css
++---07 Intermediate CSS
+|   +---7.0 CSS Cascade
+|   |   +---goal.png
+|   |   +---index.html
+|   |   +---style.css
+|   +---7.1 Combining Selectors
+|   |   +---index.html
+|   |   +---style.css
+|   +---7.2 CSS Positioning
+|   |   +---goal.png
+|   |   +---index.html
+|   +---7.3 CSS Flag Project
+|       +---goal.png
+|       +---index.html
++---08 Advanced CSS
+|   +---8.0 CSS Display
+|   |   +---goal1.png
+|   |   +---goal2.png
+|   |   +---index.html
+|   |   +---solution1.html
+|   |   +---solution2.html
+|   +---8.1 CSS Float
+|   |   +---cat.jpeg
+|   |   +---dog.jpeg
+|   |   +---goal.png
+|   |   +---index.html
+|   |   +---solution.html
+|   +---8.2 Responsiveness
+|   |   +---bootstrap.html
+|   |   +---flexbox.html
+|   |   +---grid.html
+|   |   +---index.html
+|   |   +---media-query.html
+|   +---8.3 Media Query
+|   |   +---index.html
+|   |   +---solution.html
+|   +---8.4 Web Design Agency Project
+|   |   +---assets
+|   |   |   +---images
+|   |   |       +---beautiful.jpg
+|   |   |       +---construction.jpg
+|   |   |       +---logo.png
+|   |   +---index.html
+|   |   +---solution.css
+|   |   +---solution.html
+|   |   +---style.css
+|   +---Display and Position Property
+|   |   +---Display.html
+|   |   +---Position Property.html
+|   |   +---Position with Float.html
+|   |   +---Text Alignment Property.html
+|   +---Grid
+|   |   +---80-grid-layouts.html
+|   |   +---80-grid-layouts.jpg
+|   |   +---ggrid2.html
+|   |   +---grid1.html
+|   +---image gallery.html
+|   |   +---1.jpg
+|   |   +---2.jpg
+|   |   +---3.jpg
+|   |   +---4.jpg
+|   |   +---5.jpg
+|   |   +---6.jpg
+|   |   +---7.jpg
+|   |   +---8.jpg
+|   |   +---gallery.html
+|   +---mediaquery
+|   |   +---mediaquery.html
+|   +---Selectors
+|   |   +---basic_selector.html
+|   |   +---child_selector.html
+|   |   +---group_selector.html
+|   |   +---pseduo_selector.html
+|   |   +---selectors.html
+|   |   +---sibling.html
+|   +---shadows
+|   |   +---css.html
+|   |   +---jerry-removebg-preview.png
+|   +---Width,Height,Overflow Property
+|   |   +---Overflow Property.html
+|   |   +---Width and Height.html
+|   +---background-image.html
+|   +---background.html
+|   +---block_inline.html
+|   +---border.html
+|   +---box_model.html
+|   +---box_shadow.html
+|   +---circle.html
+|   +---class_id.html
+|   +---css display flex.html
+|   +---display_flex.html
+|   +---display_inline-block.html
+|   +---flex_card.css
+|   +---flex_with_cards.html
+|   +---font_properties.html
+|   +---ggrid2.html
+|   +---grid1.html
+|   +---grid_revision.html
+|   +---icons.html
+|   +---Important.html
+|   +---introduction.html
+|   +---margin_padding.html
+|   +---semantic_tag.html
+|   +---Sprcificity.html
+|   +---style.css
+|   +---text_properties.html
+|   +---ways to add css.html
+|   +---weblayout.html
++---09 Flexbox
+|   +---9.0 Display Flex
+|   |   +---absolute-position.html
+|   |   +---flex.html
+|   |   +---float.html
+|   |   +---goal.png
+|   |   +---html-table.html
+|   |   +---index.html
+|   |   +---inline-block.html
+|   |   +---solution.html
+|   +---9.1 Flex Direction
+|   |   +---goal.png
+|   |   +---index.html
+|   |   +---solution.html
+|   +---9.4 Flexbox Pricing Table Project
+|       +---goal-large.png
+|       +---goal-small.png
+|       +---index.html
+|       +---solution.html
++---10 Grid
+|   +---10.0 Display Grid
+|   |   +---example.html
+|   |   +---goal.png
+|   |   +---index.html
+|   |   +---solution.html
+|   +---10.1 Grid Sizing
+|   |   +---auto-size.html
+|   |   +---fixed-size.html
+|   |   +---fractional-size.html
+|   |   +---index.html
+|   |   +---minmax-size.html
+|   |   +---repeat.html
+|   |   +---test.html
+|   +---10.2 Grid Placement
+|   |   +---demo1.html
+|   |   +---demo2.html
+|   |   +---demo3.html
+|   |   +---demo4.html
+|   |   +---exercise1.html
+|   |   +---exercise2.html
+|   |   +---exercise3.html
+|   |   +---goal1.png
+|   |   +---goal2.png
+|   |   +---goal3.png
+|   |   +---solution1.html
+|   |   +---solution2.html
+|   |   +---solution3.html
+|   +---10.3 Mondrian Project
+|       +---dimensions.png
+|       +---goal.png
+|       +---index.html
+|       +---solution.html
++---13 Projects
+|   +---clip path.html
+|   +---image gallery.html
+|   +---layouts.html
+|   +---multiple background.html
++---14 Introduction to Javascript ES6
+|   +---02 char count & slice.js
+|   +---03 functions.js
+|   +---04 life in weeks.js
+|   +---05 bmi calculator.js
++---15 Intermediate Javascript
+|   +---01 random number.js
+|   +---02 control statement if_else.js
+|   +---03 comparators and equality.js
+|   +---04 bmi.js
+|   +---05 leap year.js
+|   +---06 Array Loops.js
+|   +---07 fibonacci .js
+|   +---08 IIFE.js
+|   +---09 Event Loop.js
+|   +---10 closure.js
+|   +---11 memoization.js
+|   +---user define function.html
++---16 The Document Object Model (DOM)
+|   +---DOM Challenge Starting Files
+|       +---index.html
+|       +---index.js
+|       +---styles.css
++---18 Advanced Javascript and DOM Manipulation
+|   +---CBF and response to events.js
+|   +---form_validation.html
+|   +---HOF or passing a fun as a arguments.js
+|   +---local storage.html
+|   +---Object.js
+|   +---topsfirstapi.html
++---19 jQuery
+|   +---index.html
+|   +---index.js
+|   +---style.css
++---36 React.js
+|   +---react_vite
+|       +---public
+|       |   +---vite.svg
+|       +---src
+|       |   +---assets
+|       |   |   +---react.svg
+|       |   +---component
+|       |   |   +---00 Keeper App Part 1
+|       |   |   |   +---App.jsx
+|       |   |   |   +---Footer.jsx
+|       |   |   |   +---Header.jsx
+|       |   |   |   +---Note.jsx
+|       |   |   +---000 CRUD
+|       |   |   |   +---Api.jsx
+|       |   |   |   +---CRUD.jsx
+|       |   |   |   +---Form.jsx
+|       |   |   |   +---FormSateOjbect.jsx
+|       |   |   |   +---FormState.jsx
+|       |   |   |   +---NewCrud.jsx
+|       |   |   |   +---Table.jsx
+|       |   |   |   +---TopsIndexCRUD.jsx
+|       |   |   |   +---TopsMultipleIdCRUD.jsx
+|       |   |   |   +---TopsMultipleIndexCRUD.jsx
+|       |   |   |   +---TopsSingleCRUD.jsx
+|       |   |   +---01 JSX Code Practice
+|       |   |   |   +---App.jsx
+|       |   |   +---02 React Styling Practice
+|       |   |   |   +---App.jsx
+|       |   |   |   +---greeting.css
+|       |   |   |   +---Greetings.jsx
+|       |   |   |   +---mystyle.module.css
+|       |   |   |   +---styling.css
+|       |   |   |   +---Styling.jsx
+|       |   |   +---03 React Components Practice
+|       |   |   |   +---App.jsx
+|       |   |   |   +---Heading.jsx
+|       |   |   |   +---List.jsx
+|       |   |   +---05 React Props
+|       |   |   |   +---props type
+|       |   |   |   |   +---FirstComponent.jsx
+|       |   |   |   |   +---SecondComponent.jsx
+|       |   |   |   +---App.jsx
+|       |   |   |   +---Card.jsx
+|       |   |   |   +---contacts.js
+|       |   |   |   +---PropApp.jsx
+|       |   |   +---05.5 React Devtools
+|       |   |   |   +---App.jsx
+|       |   |   |   +---Avatar.jsx
+|       |   |   |   +---Card.jsx
+|       |   |   |   +---contact.js
+|       |   |   |   +---Detail.jsx
+|       |   |   +---06 Mapping Components
+|       |   |   |   +---Avatar.jsx
+|       |   |   |   +---Card.jsx
+|       |   |   |   +---contact.js
+|       |   |   |   +---Detail.jsx
+|       |   |   |   +---MapComponent.jsx
+|       |   |   +---06.1 emoji pedia mapping practice
+|       |   |   |   +---Emoji.jsx
+|       |   |   |   +---emojipedia.js
+|       |   |   |   +---Entry.jsx
+|       |   |   +---07 Map Filter Reduce
+|       |   |   |   +---01 Methods.jsx
+|       |   |   |   +---ArrowFunctions.jsx
+|       |   |   |   +---EmojiMethods.jsx
+|       |   |   |   +---emojipedia.js
+|       |   |   +---09 Conditional Rendering Login
+|       |   |   |   +---Form.jsx
+|       |   |   |   +---index.js
+|       |   |   |   +---Input.jsx
+|       |   |   |   +---Login.jsx
+|       |   |   +---10 State Hook Practice
+|       |   |   |   +---App.jsx
+|       |   |   |   +---TimeExample.jsx
+|       |   |   +---11 Event Handling Practice
+|       |   |   |   +---App.jsx
+|       |   |   +---12 React Forms
+|       |   |   |   +---App.jsx
+|       |   |   +---12.1 React From Complex State
+|       |   |   |   +---ComplexState.jsx
+|       |   |   |   +---ComplexState2.jsx
+|       |   |   |   +---ComplexStatePractrice.jsx
+|       |   |   +---13 Complex State Practice
+|       |   |   |   +---ComplexStatePractice.jsx
+|       |   |   +---17 State Declarative vs Imperative
+|       |   |   |   +---StateDeclarativeVsImperative.jsx
+|       |   |   +---18 Destructuring
+|       |   |   |   +---data.js
+|       |   |   |   +---Destructring.jsx
+|       |   |   |   +---practice.js
+|       |   |   +---20 Class vs Functional Components
+|       |   |   |   +---ClassVsFunctionalComponents.jsx
+|       |   |   +---21 Spread Operator Practice
+|       |   |   |   +---SpreadOperatorPractice.jsx
+|       |   |   +---22 Managing Component Tree
+|       |   |   |   +---InputArea.jsx
+|       |   |   |   +---ManagingComponentTree.jsx
+|       |   |   |   +---ToDoItem.jsx
+|       |   |   +---23 Search Query
+|       |   |   |   +---TypeAhead.jsx
+|       |   |   +---24 useRef
+|       |   |   |   +---App.jsx
+|       |   |   |   +---Example.jsx
+|       |   |   +---Class vs Function
+|       |   |   |   +---ClassComponent.jsx
+|       |   |   |   +---FunctionComponent.jsx
+|       |   |   +---redux
+|       |   |   |   +---components
+|       |   |   |   |   +---Counter.jsx
+|       |   |   |   +---redux
+|       |   |   |   |   +---actions.js
+|       |   |   |   |   +---actionTypes.js
+|       |   |   |   |   +---reducer.js
+|       |   |   |   |   +---store.js
+|       |   |   |   +---App.jsx
+|       |   |   |   +---Index.jsx
+|       |   |   +---router
+|       |   |   |   +---About.jsx
+|       |   |   |   +---About1st.jsx
+|       |   |   |   +---About2nd.jsx
+|       |   |   |   +---App.jsx
+|       |   |   |   +---Contact.jsx
+|       |   |   |   +---Home.jsx
+|       |   |   |   +---Navbar.jsx
+|       |   |   +---tops
+|       |   |       +---LifeCycleClassEx.jsx
+|       |   |       +---LifeCycleFunctionEx.jsx
+|       |   |       +---StateColorEx.jsx
+|       |   |       +---StateEx.jsx
+|       |   |       +---TClassComponent.jsx
+|       |   |       +---User.jsx
+|       |   +---index.css
+|       |   +---main.jsx
+|       +---.gitignore
+|       +---eslint.config.js
+|       +---index.html
+|       +---README.md
+|       +---vite.config.js
++---crud
+|   +---public
+|   |   +---vite.svg
+|   +---src
+|   |   +---09_FormRedux
+|   |   |   +---component
+|   |   |   |   +---Form.jsx
+|   |   |   +---redux
+|   |   |   |   +---action.js
+|   |   |   |   +---reducer.js
+|   |   |   |   +---store.js
+|   |   |   +---09_FormRedux.jsx
+|   |   |   +---redux .md
+|   |   +---09_FormReduxToolkit
+|   |   |   +---app
+|   |   |   |   +---store.js
+|   |   |   +---components
+|   |   |   |   +---FormShort.jsx
+|   |   |   |   +---List.jsx
+|   |   |   +---features
+|   |   |   |   +---formSlice.js
+|   |   |   +---09_FormReduxToolkit.jsx
+|   |   |   +---redux toolkit .md
+|   |   +---assets
+|   |   |   +---react.svg
+|   |   +---01_FormIndex.jsx
+|   |   +---02_FormBrief.jsx
+|   |   +---03_FormShort.jsx
+|   |   +---04.2_FormLocalStorage.jsx
+|   |   +---04_FormLocalStorageIndex.jsx
+|   |   +---05_FormFetch.jsx
+|   |   +---06_FormAxios.jsx
+|   |   +---07_FormApiLocalStorage.jsx
+|   |   +---10_FormFirebase.jsx
+|   |   +---App.jsx
+|   |   +---main.jsx
+|   +---.gitignore
+|   +---01 form index .html
+|   +---02 form id .html
+|   +---03 local storage.js
+|   +---04 form locat storage .html
+|   +---05 http fetch axios .md
+|   +---06 form fetch .html
+|   +---07 form axios .html
+|   +---08 from api localstorage .html
+|   +---09 firebase .md
+|   +---10 form firebase .html
+|   +---11 form firebase snapshot .html
+|   +---db.json
+|   +---eslint.config.js
+|   +---index.html
+|   +---json.md
+|   +---README.md
+|   +---vite.config.js
++---hooks
+|   +---public
+|   |   +---vite.svg
+|   +---src
+|   |   +---01 useState
+|   |   |   +---App.jsx
+|   |   |   +---useState .md
+|   |   +---02 useEffect
+|   |   |   +---App.jsx
+|   |   |   +---intro .md
+|   |   |   +---useEffect .md
+|   |   +---03 useRef
+|   |   |   +---App.jsx
+|   |   |   +---intro .md
+|   |   |   +---useRef .md
+|   |   +---04 useContext
+|   |   |   +---components
+|   |   |   |   +---AppContent.jsx
+|   |   |   |   +---ThemeToggleButton.jsx
+|   |   |   +---context
+|   |   |   |   +---ThemeContext.jsx
+|   |   |   +---App.jsx
+|   |   |   +---intro .md
+|   |   |   +---useContext .md
+|   |   +---05 useReducer
+|   |   |   +---App.jsx
+|   |   |   +---AppEx.jsx
+|   |   |   +---useReducer .md
+|   |   +---06 useMemo
+|   |   |   +---App.jsx
+|   |   |   +---useMemo .md
+|   |   +---07 useCallback
+|   |   |   +---App.jsx
+|   |   |   +---useCallback .md
+|   |   +---08 useLayoutEffect
+|   |   +---09 useImperativeHandle
+|   |   +---10 useDebugValue
+|   |   +---11 custom hooks
+|   |   |   +---App.jsx
+|   |   |   +---custom Hook .md
+|   |   +---assets
+|   |   |   +---react.svg
+|   |   +---hooks .md
+|   |   +---main.jsx
+|   +---.gitignore
+|   +---eslint.config.js
+|   +---index.html
+|   +---README.md
+|   +---vite.config.js
++---oop.sql
++---template.html
++---zbinery.png
++---zCheat Sheet.pdf

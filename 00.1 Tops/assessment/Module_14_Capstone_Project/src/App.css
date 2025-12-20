@@ -1,0 +1,29 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  min-width: 800px;
+}
+
+.table td,
+.table th {
+  white-space: nowrap;
+  padding: 1rem !important;
+}
+
+@media (max-width: 768px) {
+  .card-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .w-25 {
+    width: 100% !important;
+  }
+}
