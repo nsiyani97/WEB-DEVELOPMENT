@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Check Console</h1>
+    <script>
+      const links = [
+        { id: 1, title: "Instagram", clicks: 120, isActive: true, category: "social" },
+        { id: 2, title: "YouTube", clicks: 340, isActive: false, category: "video" },
+        { id: 3, title: "GitHub", clicks: 80, isActive: true, category: "tech" },
+        { id: 4, title: "Portfolio", clicks: 60, isActive: true, category: "personal" },
+      ];
+
+      function analyticsDashboard(links) {
+        return {
+          totalLinks: links.length,
+          activeLinks: links.filter((l) => l.isActive).length,
+          totalClicks: links.reduce((sum, l) => sum + l.clicks, 0),
+          hasInactive: links.some((l) => !l.isActive),
+          allActive: links.every((l) => l.isActive),
+          titles: links.map((l) => l.title),
+        };
+      }
+
+      console.log("📊 Dashboard Summary:", analyticsDashboard(links));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+- Functions & Reusability Coverage Depth:
+- Function declaration vs expression vs arrow function.
+- Parameters and return values.
+- Demo: Function createButton(label,color) that returns a styled HTML button.
