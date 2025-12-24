@@ -1,0 +1,33 @@
+body {
+  background-color: silver;
+}
+table {
+  border-collapse: collapse;
+  outline: 4px ridge wheat;
+}
+th {
+  width: 500px;
+  border: 2px solid wheat;
+  font-size: 28px;
+  color: rgb(0, 54, 0);
+  padding: 18px;
+  font-weight: bolder;
+  text-align: center;
+  background-color: green;
+}
+td {
+  border: 2px solid wheat;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 18px;
+  color: aliceblue;
+}
+.red {
+  background-color: red;
+}
+.black {
+  background-color: black;
+}
+.green {
+  background-color: green;
+}

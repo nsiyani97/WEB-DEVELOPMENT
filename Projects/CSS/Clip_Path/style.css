@@ -1,0 +1,80 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+.main {
+  background-color: gray;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+}
+
+.header {
+  display: flex;
+  width: 60%;
+  margin-left: 20%;
+  padding: 1%;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+
+.head {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  margin: 10% 20%;
+  padding-bottom: 15%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+p {
+  font-size: 10px;
+}
+
+.button {
+  width: 100%;
+}
+
+.buttonone {
+  width: 15%;
+  background-color: rgba(255, 99, 71, 0.718);
+  padding: 6px;
+  font-size: 8px;
+  color: white;
+}
+
+.buttontwo {
+  width: 15%;
+  background-color: rgba(255, 255, 255, 0.454);
+  padding: 6px;
+  font-size: 8px;
+  color: white;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin: 8px;
+  border: 1.2px solid rgba(255, 0, 0, 0.617);
+  border-radius: 50px;
+}
+
+.footer {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+}

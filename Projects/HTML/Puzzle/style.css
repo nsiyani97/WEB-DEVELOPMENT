@@ -1,0 +1,17 @@
+body {
+  background-color: silver;
+}
+.table1 {
+  width: 500px;
+  border: 4px ridge black;
+  border-collapse: collapse;
+  border-color: black;
+}
+.table1 td {
+  border-collapse: collapse;
+  border: 4px ridge darkgreen;
+  text-align: center;
+  font-weight: bolder;
+  background-color: green;
+  color: aliceblue;
+}
