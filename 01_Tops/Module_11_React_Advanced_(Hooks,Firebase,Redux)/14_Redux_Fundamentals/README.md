@@ -1,0 +1,4 @@
+- Redux Fundamentals
+- Redux architecture: store, action, reducer, dispatch.
+- Setting up Redux in a React project.
+- Demo: Create simple counter using Redux store.

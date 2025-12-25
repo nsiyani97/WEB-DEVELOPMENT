@@ -247,3 +247,13 @@ export default ThemeToggle;
 | Heavy async data      | ❌       | ⚠️ (Redux better) |
 
 ---
+
+## 🚀 Next Step (Recommended)
+
+Would you like to:
+
+- 🔄 Add **localStorage persistence** for theme?
+- 🧩 Convert this into **Custom Hook (useTheme)**?
+- 🧠 Compare **Context vs Redux** with a real example?
+
+Tell me what you want next 👍

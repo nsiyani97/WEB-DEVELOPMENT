@@ -1,0 +1,4 @@
+- Async Operations in Redux (Thunk)
+- Middleware concept.
+- Async API calls using Redux Thunk.
+- Demo: Fetch task list from Firebase using thunk action.

@@ -1,0 +1,5 @@
+- Environment Variables and Configuration
+- Environment management (.env.local).
+- API key security.
+- Conditional environments (dev vs prod).
+- Demo: Secure Firebase credentials in environment files.

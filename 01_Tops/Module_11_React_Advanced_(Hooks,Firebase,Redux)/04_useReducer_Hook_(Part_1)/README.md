@@ -1,0 +1,5 @@
+- useReducer Hook (Part 1)
+- Concept of reducers (state + action ? new state).
+- useReducer() syntax and initialization.
+- Demo: Build counter example with increment/decrement/reset using useReducer.
+- Depth: Explain the difference between useState vs useReducer for complex state logic.

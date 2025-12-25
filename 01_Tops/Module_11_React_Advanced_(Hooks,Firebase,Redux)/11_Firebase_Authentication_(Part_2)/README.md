@@ -1,0 +1,5 @@
+- Firebase Authentication (Part 2)
+- Persistent authentication with onAuthStateChanged().
+- Logout and user session handling.
+- Demo: Implement logout functionality with user greeting in navbar.
+- Depth: Emphasize secure handling of user session states.

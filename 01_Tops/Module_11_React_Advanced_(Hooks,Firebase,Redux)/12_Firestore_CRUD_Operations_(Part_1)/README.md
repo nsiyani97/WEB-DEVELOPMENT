@@ -1,0 +1,4 @@
+- Firestore CRUD Operations (Part 1)
+- Firestore introduction (collections, documents).
+- Add and read data.
+- Demo: Add and fetch tasks in a “Task Manager” app.

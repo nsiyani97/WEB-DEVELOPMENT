@@ -1,0 +1,5 @@
+- Context API Deep Dive (Part 2)
+- Combining Context with Reducer.
+- Nested context providers.
+- Avoiding unnecessary re-renders using memoization.
+- Demo: User authentication context using reducer + context.

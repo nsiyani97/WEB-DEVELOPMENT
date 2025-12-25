@@ -1,0 +1,6 @@
+- Form Handling with Formik
+- Controlled vs uncontrolled components.
+- Installing and using Formik.
+- Validation with Yup schema.
+- Demo: Task creation form with validation.
+- Depth: Highlight cleaner syntax and validation vs manual handling.

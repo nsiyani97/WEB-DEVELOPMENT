@@ -1,0 +1,6 @@
+- Firebase Introduction
+- What is Firebase and its role (backend as a service).
+- Firebase setup: project creation, SDK integration.
+- Environment variable management for Firebase keys.
+- Demo: Initialize Firebase project and connect to React app.
+- Depth: Explain benefits of serverless integration for front-end developers.

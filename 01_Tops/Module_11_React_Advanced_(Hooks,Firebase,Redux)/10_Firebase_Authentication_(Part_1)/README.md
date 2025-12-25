@@ -1,0 +1,4 @@
+- Firebase Authentication (Part 1)
+- Sign-up, login with email/password.
+- Firebase Auth API overview.
+- Demo: Build SignUp and Login components using Firebase methods.

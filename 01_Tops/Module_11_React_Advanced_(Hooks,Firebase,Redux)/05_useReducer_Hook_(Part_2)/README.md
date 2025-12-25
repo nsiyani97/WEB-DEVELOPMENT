@@ -1,0 +1,4 @@
+- useReducer Hook (Part 2)
+- Multiple action handling (switch case).
+- Dispatching from child components.
+- Demo: To-Do app using reducer for add, edit, delete actions.

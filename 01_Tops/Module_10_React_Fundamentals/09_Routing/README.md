@@ -295,3 +295,12 @@ Example active style:
 - No page reloads → fast UX
 
 ---
+
+## 🚀 Next Logical Step (Tell me what you want)
+
+👉 Add **404 Not Found Page**
+👉 Nested Routes (Dashboard → Profile, Settings)
+👉 Dynamic Routes (`/user/:id`)
+👉 Protected Routes (Login required)
+
+Just say **which one**, and we’ll build it 💪

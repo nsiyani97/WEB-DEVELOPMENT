@@ -1,0 +1,5 @@
+- Redux State Flow
+- Connecting components with useSelector and useDispatch.
+- Redux DevTools overview.
+- Demo: Display and update tasks using Redux actions.
+- Depth: Show difference between Context and Redux for large-scale apps.

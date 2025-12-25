@@ -1,0 +1,5 @@
+- Firestore CRUD Operations (Part 2)
+- Update and delete documents.
+- Real-time updates with onSnapshot().
+- Demo: Real-time task updates without refreshing.
+- Depth: Explain how Firebase syncs UI state automatically.

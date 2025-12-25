@@ -1,0 +1,6 @@
+- Mini Project Deployment and Review
+- Firebase Hosting or Netlify deployment.
+- Testing, debugging, performance optimization.
+- Final code walkthrough.
+- Demo: Deploy the Task Manager app live and share link.
+- AI Integration: Ask ChatGPT: “Generate README.md for this React + Firebase project.”

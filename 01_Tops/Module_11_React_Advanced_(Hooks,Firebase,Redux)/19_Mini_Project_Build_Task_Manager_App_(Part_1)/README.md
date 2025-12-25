@@ -1,0 +1,5 @@
+- Mini Project Build: “Task Manager App” (Part 1)
+- Create base structure: authentication + CRUD logic.
+- Redux integration for task management.
+- Demo: Build and test authentication + task list UI.
+- AI Tip: Use Copilot to assist in creating CRUD reducers and components.

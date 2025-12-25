@@ -1,0 +1,5 @@
+- useMemo and useCallback Hooks
+- React re-rendering and performance bottlenecks.
+- Memoization with useMemo().
+- Function memoization with useCallback().
+- Demo: Create large list rendering with and without memoization; compare performance.

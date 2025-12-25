@@ -1,0 +1,6 @@
+- Context API Deep Dive (Part 1)
+- What is global state and why needed.
+- Creating Context and Provider.
+- Passing state to deeply nested components.
+- Demo: Create ThemeContext for global dark/light mode.
+- Depth: Explain prop drilling problem and how Context solves it.
