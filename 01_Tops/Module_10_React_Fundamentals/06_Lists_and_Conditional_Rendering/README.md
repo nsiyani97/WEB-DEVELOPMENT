@@ -250,3 +250,4 @@ Try adding:
 3. Show **“No Products Available”** if array is empty
 
 ---
+s

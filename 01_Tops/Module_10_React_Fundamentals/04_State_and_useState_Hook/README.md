@@ -288,3 +288,4 @@ Try this next 👇
 4️⃣ Convert to reusable `<Counter />` component
 
 ---
+F
