@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nsiyani97.github.io/WEB-DEVELOPMENT/Projects/REACT/The_Keeper_App/",
+  "homepage": "https://nsiyani97.github.io/WEB-DEVELOPMENT/Projects/REACT/the-keeper-app/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
