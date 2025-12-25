@@ -1,9 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-
-  // 👇 REQUIRED for GitHub Pages
-  base: "/WEB-DEVELOPMENT/Projects/REACT/the-keeper-app/",
+  base: "/Projects/REACT/The_Keeper_App/",
 });
